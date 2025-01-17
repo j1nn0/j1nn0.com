@@ -1,0 +1,7 @@
+baseURL: https://j1nn0.com/
+languageCode: ja-jp
+title: j1nn0
+enableRobotsTXT: true
+theme: ["PaperMod"]
+params:
+  defaultTheme: auto
