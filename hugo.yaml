@@ -1,7 +1,96 @@
 baseURL: https://j1nn0.com/
-languageCode: ja-jp
 title: j1nn0
-enableRobotsTXT: true
 theme: ["PaperMod"]
+
+defaultContentLanguage: ja
+hasCJKLanguage: true
+nableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+
+menus:
+  main:
+    - name: Posts
+      url: posts
+      weight: 5
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 15
+    - name: Archive
+      url: archives
+      weight: 20
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
+pagination:
+  pagerSize: 5
+
+languages:
+  ja:
+    languageCode: ja-JP
+    languageName: "Japanese"
+    languageDirection: ltr
+    weight: 1
+
 params:
   defaultTheme: auto
+  author: j1nn0
+  DateFormat: 2006-01-02
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  showtoc: true
+  tocopen: true
+  disableScrollToTop: false
+  profileMode:
+    enabled: false
+  homeInfoParams:
+    Title: "j1nn0 note"
+    Content: >
+      Japanese programmer
+
+      -  (Vue/PHP/C#/AWS)
+
+  socialIcons:
+    - name: github
+      title: Github
+      url: "https://github.com/kjinno"
+    - name: X
+      title: X/Twitter
+      url: "https://x.com/j1nn0"
+    - name: bluesky
+      title: Bluesky
+      url: "https://bsky.app/profile/j1nn0.com"
+    - name: instagram
+      title: instagram
+      url: "https://www.instagram.com/_j1nn0_/"
+    - name: discord
+      title: Discord
+      url: "https://discordapp.com/users/460995342767357952"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

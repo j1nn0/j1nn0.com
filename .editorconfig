@@ -24,3 +24,6 @@ indent_size = 2
 # web files
 [*.{html,css,scss}]
 indent_size = 2
+
+[_headers]
+indent_size= 2
