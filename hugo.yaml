@@ -16,20 +16,20 @@ mainsections: ["posts"]
 minify:
   disableXML: true
 
-menus:
-  main:
-    - name: Posts
-      url: posts
-      weight: 5
-    - name: Search
-      url: search/
-      weight: 10
-    - name: Tags
-      url: tags/
-      weight: 15
-    - name: Archive
-      url: archives
-      weight: 20
+#menus:
+#  main:
+#    - name: Posts
+#      url: posts
+#      weight: 5
+#    - name: Search
+#      url: search/
+#      weight: 10
+#    - name: Tags
+#      url: tags/
+#      weight: 15
+#    - name: Archive
+#      url: archives
+#      weight: 20
 
 taxonomies:
   category: categories
