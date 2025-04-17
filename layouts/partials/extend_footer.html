@@ -1,0 +1,6 @@
+{{- /* Footer custom content area start */ -}}
+{{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+<div class="cf-turnstile" data-sitekey="0x4AAAAAABM6PzoYJu1MMuX8"></div>
+{{- end -}}
+{{- /* Footer custom content area end */ -}}
