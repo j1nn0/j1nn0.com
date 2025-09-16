@@ -1,25 +1,39 @@
-/* 1. ベースフォント設定 */
+/* ===================================================
+   PaperMod フォント最適化（最小版）
+   - 日本語: Noto Sans JP
+   - 欧文: 元の指定を維持
+   - 色指定なし → ダーク/ライトモード対応
+   - ul/li、テーブル、borderなどのスタイルは指定しない
+   =================================================== */
+
+/* 1. 本文 */
 body {
   font-family:
-    "Noto Sans JP",               /* Google Fonts 日本語フォント */
-    "Hiragino Kaku Gothic ProN",  /* macOS 標準ゴシック */
-    "Hiragino Sans",              /* macOS 標準サンセリフ */
-    Meiryo,                       /* Windows 標準ゴシック */
-    sans-serif;                   /* フォールバック */
+    "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   word-break: break-word;
 }
 
-/* 2. 英数字だけ欧文フォントにする */
+/* 2. 英数字のみ欧文フォント */
 body :lang(en) {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 3. 見出しの強調と可読性 */
+/* 3. 見出し */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family:
+    "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  font-weight: 700;
   line-height: 1.3;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -29,6 +43,9 @@ h1, h2, h3, h4, h5, h6 {
 code, pre {
   font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
   font-size: 0.95em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  overflow-x: auto;
 }
 
 /* 5. モバイル最適化 */

@@ -50,7 +50,6 @@ params:
   defaultTheme: auto
   author: j1nn0
   DateFormat: 2006-01-02
-  googleFonts: ["Noto+Sans+JP:400,700&display=swap"]
 
   ShowReadingTime: false
   ShowShareButtons: true
