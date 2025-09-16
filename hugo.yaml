@@ -4,7 +4,7 @@ theme: ["PaperMod"]
 
 defaultContentLanguage: ja
 hasCJKLanguage: true
-nableInlineShortcodes: true
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
