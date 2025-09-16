@@ -51,6 +51,7 @@ params:
   defaultTheme: auto
   defaultImage: "https://j1nn0.com/images/ogp-default.png"
   author: j1nn0
+  twitter: "j1nn0"
   DateFormat: 2006-01-02
 
   ShowReadingTime: false
