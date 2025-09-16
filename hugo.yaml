@@ -47,6 +47,7 @@ languages:
     weight: 1
 
 params:
+  description: "Japanese programmer / Vue, PHP, C#, AWS"
   defaultTheme: auto
   author: j1nn0
   DateFormat: 2006-01-02
