@@ -49,7 +49,7 @@ languages:
 params:
   description: "Japanese programmer / Vue, PHP, C#, AWS"
   defaultTheme: auto
-  defaultImage: "/images/ogp-default.png"
+  defaultImage: "https://j1nn0.com/images/ogp-default.png"
   author: j1nn0
   DateFormat: 2006-01-02
 
