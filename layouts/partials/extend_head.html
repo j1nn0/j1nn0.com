@@ -3,5 +3,18 @@
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- end -}}
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Params.description | default site.Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ site.Params.defaultImage }}{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Params.description | default site.Params.description }}">
+<meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ site.Params.defaultImage }}{{ end }}">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 {{- /* Head custom content area end */ -}}

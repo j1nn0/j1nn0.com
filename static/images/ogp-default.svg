@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="#1e1e1e"/>
+
+  <!-- サイト名 -->
+  <text x="50%" y="40%" text-anchor="middle" font-family="Noto Sans JP, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">
+    j1nn0.com
+  </text>
+
+  <!-- キャッチコピー -->
+  <text x="50%" y="60%" text-anchor="middle" font-family="Noto Sans JP, Helvetica Neue, Arial, sans-serif" font-size="36" fill="#cccccc">
+    Japanese programmer / Vue, PHP, C#, AWS
+  </text>
+</svg>
