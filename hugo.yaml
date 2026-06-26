@@ -41,9 +41,9 @@ pagination:
 
 languages:
   ja:
-    languageCode: ja-JP
-    languageName: "Japanese"
-    languageDirection: ltr
+    locale: ja-JP
+    label: "Japanese"
+    direction: ltr
     weight: 1
 
 params:
