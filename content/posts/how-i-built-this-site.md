@@ -87,12 +87,12 @@ Cloudflare Pages の連携は3分で終わる。
 
 ### HTTP ヘッダー
 
-`static/_headers` でセキュリティヘッダーを設定してる。CSP も一緒に入れた。Google Fonts と PaperMod のスクリプトが動くように絞った。
+`static/_headers` でセキュリティヘッダーを設定してる。CSP も一緒に入れた。Google Fonts、PaperMod、Cloudflare Pages のスクリプトが動くように絞った。
 
 ```text
 /*
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
