@@ -112,3 +112,13 @@ code, pre {
     line-height: 1.2;
   }
 }
+
+/* 6. 補足ボックス (Callout) */
+.callout {
+  padding: 12px 16px;
+  margin: 20px 0;
+  border-left: 4px solid var(--theme);
+  background: var(--code-bg);
+  border-radius: 4px;
+  font-size: 15px;
+}
