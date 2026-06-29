@@ -28,3 +28,21 @@ Recent commits use short, imperative subjects such as `Fix meta`, `Improve css`,
 ## Security & Configuration Tips
 
 Do not commit local secrets, deployment tokens, or generated credentials. Keep canonical site settings in `hugo.yaml`, and check production URLs carefully when editing `baseURL`, Open Graph, Twitter card, or language configuration.
+
+## Blog Writing Skills
+
+Globally installed article writing and editing skills (`~/.agents/skills/`):
+
+| Skill | Purpose |
+|-------|---------|
+| `edit-article` | Article structure, editing, and revision (mattpocock/skills) |
+| `content-strategy` | Content strategy and topic planning (coreyhaines31/marketingskills) |
+| `copywriting` | Sales copy, CTAs, and headlines (coreyhaines31/marketingskills) |
+| `blog-writing-guide` | Blog writing style guide (getsentry/skills) |
+
+Typical workflows combining with existing Japanese language skills:
+
+- "Plan the structure of a technical blog post" → `edit-article` + `content-strategy`
+- "Polish this article in Japanese" → `edit-article` + `japanese-tech-writing` + `human-writing-ja`
+- "Write blog post headlines and CTAs" → `copywriting`
+
