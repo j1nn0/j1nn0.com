@@ -3,9 +3,9 @@ title: "AIサブスクを3つ使い分けてレート制限に悩まなくなっ
 slug: oh-my-opencode-slim-review
 date: 2026-06-30
 tags:
-  - oh-my-opencode-slim
+  - oh_my_opencode_slim
   - opencode
-  - ai-agents
+  - ai_agents
   - llm
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
 {{< rawhtml >}}
 <div class="callout">
   この記事は AI を活用して執筆しました。<br>
-  記事の構成や文章のブラッシュアップに AI が提案した内容を参考にしています。
+  記事の構成を考える際や、文章を整える際に、AI の提案を参考にしています。
 </div>
 {{< /rawhtml >}}
 

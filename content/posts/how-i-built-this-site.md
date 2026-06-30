@@ -5,14 +5,14 @@ date: 2026-06-26
 tags:
   - hugo
   - papermod
-  - cloudflare-pages
+  - cloudflare_pages
 draft: false
 ---
 
 {{< rawhtml >}}
 <div class="callout">
   この記事は AI を活用して執筆しました。<br>
-  記事の構成や文章のブラッシュアップに AI が提案した内容を参考にしています。
+  記事の構成を考える際や、文章を整える際に、AI の提案を参考にしています。
 </div>
 {{< /rawhtml >}}
 
