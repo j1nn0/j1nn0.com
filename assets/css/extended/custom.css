@@ -122,3 +122,15 @@ code, pre {
   border-radius: 4px;
   font-size: 15px;
 }
+
+/* 7. SNS アイコン（コンテンツブロッカー回避のため
+       ブロックされやすい .social-icons → .j1-sns に変更） */
+.j1-sns a {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.j1-sns a svg {
+    height: 26px;
+    width: 26px;
+}
