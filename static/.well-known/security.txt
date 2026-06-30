@@ -1,8 +1,0 @@
-# Security Vulnerability Disclosure
-# https://www.rfc-editor.org/rfc/rfc9116
-
-Contact: https://github.com/j1nn0/j1nn0.com/security/advisories/new
-Preferred-Languages: en, ja
-Canonical: https://j1nn0.com/.well-known/security.txt
-Policy: https://github.com/j1nn0/j1nn0.com/security/policy
-Expires: 2027-06-30T23:59:00.000Z
