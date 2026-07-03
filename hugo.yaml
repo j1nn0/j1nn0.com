@@ -69,6 +69,7 @@ params:
   showtoc: true
   tocopen: true
   disableScrollToTop: false
+  comments: true
   profileMode:
     enabled: false
   homeInfoParams:
