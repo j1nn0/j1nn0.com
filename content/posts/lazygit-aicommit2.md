@@ -10,13 +10,6 @@ tags:
 draft: false
 ---
 
-{{< rawhtml >}}
-<div class="callout">
-  この記事は AI を活用して執筆しました。<br>
-  記事の構成を考える際や、文章を整える際に、AI の提案を参考にしています。
-</div>
-{{< /rawhtml >}}
-
 ## Lazygit を選んだ経緯
 
 VSCode の "Generate Commit Message" に慣れきっていたせいで、エディタを乗り換えたとき、コミットメッセージの自動生成も一緒に消えた。

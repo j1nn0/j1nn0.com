@@ -10,13 +10,6 @@ tags:
 draft: false
 ---
 
-{{< rawhtml >}}
-<div class="callout">
-  この記事は AI を活用して執筆しました。<br>
-  記事の構成を考える際や、文章を整える際に、AI の提案を参考にしています。
-</div>
-{{< /rawhtml >}}
-
 ## OpenCode を使い始めてすぐ制限に当たった
 
 OpenCode を使い始めてすぐに気づいたのが、レート制限の問題だ。
