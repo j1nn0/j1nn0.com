@@ -47,6 +47,9 @@ languages:
     weight: 1
 
 params:
+  label:
+    icon: /apple-touch-icon.png
+    iconHeight: 30
   description: "Japanese programmer / Vue, PHP, C#, AWS"
   defaultTheme: auto
   defaultImage: "https://j1nn0.com/images/ogp-default.png"
