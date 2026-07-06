@@ -25,6 +25,17 @@ There is no dedicated automated test suite. Validate changes by running `hugo` b
 
 Recent commits use short, imperative subjects such as `Fix meta`, `Improve css`, and `Update PaperMod theme to latest version`. Follow that style: keep the first line direct and under about 72 characters. Pull requests should explain the user-visible change, list validation performed, link any related issue, and include screenshots when visual layout, typography, images, or metadata previews change.
 
+## Blog Writing Style Guidelines
+
+Write all blog posts (Markdown files under `content/posts/`) matching the repository's writing style:
+
+- Sentence endings: Always use plain/declarative form ("だ/である" style) instead of polite form ("です/ます" style).
+- One sentence per line: Write one sentence per line (一文一行). Separate paragraphs with an empty line.
+- No bold syntax: Do not use bold markdown syntax (`**`) anywhere in the body, lists, quotes, headings, or labels.
+- No colons: Do not use colons (`:` or `：`) to end headings, sentences, quotes, or labels.
+- Paragraph length: Keep each paragraph under 240 characters.
+- No middle dots for parallel words: Avoid middle dots (`・`) for parallel word lists; use `と` or `や` instead.
+
 ## Security & Configuration Tips
 
 Do not commit local secrets, deployment tokens, or generated credentials. Keep canonical site settings in `hugo.yaml`, and check production URLs carefully when editing `baseURL`, Open Graph, Twitter card, or language configuration.
