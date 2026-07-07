@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "blog-writing-guide": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "skillPath": "skills/blog-writing-guide/SKILL.md",
+      "computedHash": "f885b9890d8a1c43e8ed0386e2ef2c17e941a403aa354513d6b844e99229ffb7"
+    },
+    "blog-writing-guide-ja": {
+      "source": "j1nn0/skills",
+      "sourceType": "github",
+      "skillPath": "skills/blog-writing-guide-ja/SKILL.md",
+      "computedHash": "e50bbdd6621fc6f9fc2bf8ee601b184ea9a571a6c8bbe79d5f41efa3615a9f8c"
+    },
+    "edit-article": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal/edit-article/SKILL.md",
+      "computedHash": "8d7aec1987245a27e9c7d585b9f11d1129b8bd8ecb3a8596cdd3048974d9e302"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "f321507f77702a54af1db66549ec1685fc625390d06c57d7949cdcda8eb1b5c7"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "computedHash": "1de9e777a60b184b29412fadacb7bbde8c14bb7037e5c4d9d086c941281d1742"
+    },
+    "writing-great-skills": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/writing-great-skills/SKILL.md",
+      "computedHash": "42fe94c64d7b9acda9ce7d6495a3476893a1b18615986528f55f7162a29789d4"
+    },
+    "writing-ja": {
+      "source": "j1nn0/skills",
+      "sourceType": "github",
+      "skillPath": "skills/writing-ja/SKILL.md",
+      "computedHash": "0dc2cbef8c48ad97943013ad5b31763eb1297b6841f7117e0e5c1a799b5e29d4"
+    }
+  }
+}
