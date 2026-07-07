@@ -81,6 +81,28 @@ Cloudflare Pages での公開を想定しています。基本設定は次の通
 
 HTTP ヘッダーなどの静的設定は `static/_headers` に置きます。
 
+### Google Analytics
+
+Google Analytics 4 の測定 ID は Git にコミットせず、Cloudflare Pages の環境変数で管理します。
+
+Cloudflare Pages の Production 環境に次の変数を設定します。
+
+```text
+HUGO_SERVICES_GOOGLEANALYTICS_ID=G-XXXXXXXXXX
+```
+
+Hugo は `HUGO_` で始まる環境変数を設定値として読み込みます。
+PaperMod は Hugo 標準の Google Analytics partial を呼び出しているため、テンプレートへ `gtag` スクリプトを直接追加する必要はありません。
+
+ローカルで生成 HTML を確認するときは、一時的に環境変数を付けて production build を実行します。
+
+```sh
+HUGO_SERVICES_GOOGLEANALYTICS_ID=G-XXXXXXXXXX hugo --environment production --destination /tmp/j1nn0-ga-check
+```
+
+測定 ID は公開 HTML には出力されます。
+ただし、リポジトリと Git 履歴には残さない方針です。
+
 ## テーマのアップデート
 
 PaperMod は `themes/PaperMod` に配置されています。更新時はテーマディレクトリで upstream を取得し、ルートに戻って差分をコミットします。
