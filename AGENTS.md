@@ -54,20 +54,23 @@ Do not commit local secrets, deployment tokens, or generated credentials. Keep c
 
 ## Blog Writing Skills
 
-The primary skill for writing and polishing posts is `writing-ja`. It is standalone: it merges `japanese-tech-writing`, `human-writing-ja`, and `humanizer-ja`, with conflicts between them resolved against this site's published posts, and includes grep-based verification steps. Prefer it over combining the three source skills manually.
+The primary skills for blog posts are `blog-writing-guide-ja` and `writing-ja`. Use them together:
+
+| Skill | Purpose |
+|-------|---------|
+| `blog-writing-guide-ja` | Article planning, structure, headings/titles, SEO, quality bar, and pre-publish review for Japanese tech blog posts |
+| `writing-ja` | Sentence-level style: writing, polishing, and rewriting Japanese prose. Standalone merge of `japanese-tech-writing`, `human-writing-ja`, and `humanizer-ja`, with conflicts resolved against this site's published posts, including grep-based verification steps |
+
+Prefer `writing-ja` over combining its three source skills manually.
 
 Other available writing skills:
 
 | Skill | Purpose |
 |-------|---------|
 | `edit-article` | Article structure, editing, and revision (mattpocock/skills) |
-| `content-strategy` | Content strategy and topic planning (coreyhaines31/marketingskills) |
-| `copywriting` | Sales copy, CTAs, and headlines (coreyhaines31/marketingskills) |
-| `blog-writing-guide` | Blog writing style guide (getsentry/skills) |
 
 Typical workflows:
 
-- "Plan the structure of a technical blog post" → `edit-article` + `content-strategy`
-- "Write or polish a blog post in Japanese" → `writing-ja`
-- "Write blog post headlines and CTAs" → `copywriting`
+- "Plan the structure of a technical blog post" → `blog-writing-guide-ja`
+- "Write or polish a blog post in Japanese" → `blog-writing-guide-ja` + `writing-ja`
 
