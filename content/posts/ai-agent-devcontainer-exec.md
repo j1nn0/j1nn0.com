@@ -1,5 +1,5 @@
 ---
-title: "AIエージェントをホストで動かし、Dev Container越しにコマンドを実行している話"
+title: "AIエージェントをコンテナに入れず、devcontainer execで動かしている話"
 date: 2026-07-07
 draft: true
 tags:
