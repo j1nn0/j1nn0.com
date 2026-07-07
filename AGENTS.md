@@ -35,6 +35,7 @@ Write all blog posts (Markdown files under `content/posts/`) matching the reposi
 - No colons: Do not use colons (`:` or `：`) to end headings, sentences, quotes, or labels.
 - Paragraph length: Keep each paragraph under 240 characters.
 - No middle dots for parallel words: Avoid middle dots (`・`) for parallel word lists; use `と` or `や` instead.
+- Tag format: Use underscores (`_`) as word separators in front matter `tags`, never hyphens. For example, use `machine_learning` instead of `machine-learning`. Hyphens break hashtag recognition on social platforms like X (Twitter).
 
 ## Security & Configuration Tips
 
