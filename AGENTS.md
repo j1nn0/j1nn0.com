@@ -27,15 +27,26 @@ Recent commits use short, imperative subjects such as `Fix meta`, `Improve css`,
 
 ## Blog Writing Style Guidelines
 
-Write all blog posts (Markdown files under `content/posts/`) matching the repository's writing style:
+Write all blog posts (Markdown files under `content/posts/`) matching the repository's writing style. The complete ruleset, including argumentation rules, the banned-phrase list, and grep-based verification, lives in the `writing-ja` skill; use that skill when writing or polishing posts. The essentials:
 
-- Sentence endings: Always use plain/declarative form ("だ/である" style) instead of polite form ("です/ます" style).
-- One sentence per line: Write one sentence per line (一文一行). Separate paragraphs with an empty line.
-- No bold syntax: Do not use bold markdown syntax (`**`) anywhere in the body, lists, quotes, headings, or labels.
-- No colons: Do not use colons (`:` or `：`) to end headings, sentences, quotes, or labels.
-- Paragraph length: Keep each paragraph under 240 characters.
-- No middle dots for parallel words: Avoid middle dots (`・`) for parallel word lists; use `と` or `や` instead.
-- Tag format: Use underscores (`_`) as word separators in front matter `tags`, never hyphens. For example, use `machine_learning` instead of `machine-learning`. Hyphens break hashtag recognition on social platforms like X (Twitter).
+Formatting:
+
+- Sentence endings: plain/declarative form ("だ/である" style), mixed with 体言止め and light colloquial phrases. Never polite form ("です/ます" style).
+- One sentence per line (一文一行). Separate paragraphs with an empty line. Keep each paragraph under 240 characters.
+- No bold markdown syntax (`**`) anywhere in the body, lists, quotes, headings, or labels. Use ■ for labels and ※ for notes.
+- No colons (`:` or `：`) to end headings, sentences, quotes, or labels.
+- No em dashes (— or ——), no emoji, no exclamation marks.
+- No middle dots (`・`) for parallel word lists; use `と` or `や` instead.
+- Tag format: underscores (`_`) as word separators in front matter `tags`, never hyphens. For example, `machine_learning` instead of `machine-learning`. Hyphens break hashtag recognition on social platforms like X (Twitter).
+
+Structure and voice:
+
+- Titles state the outcome or change, often in the "〜した話" pattern. Numbers and product names are welcome.
+- No "はじめに", "おわりに", or "まとめ" headings. Sentence-style headings that state the section's conclusion are preferred; avoid paper-style headings like "〜における課題".
+- Post shape: personal problem/trigger → solution overview (table or flow list) → details with the reason behind each choice → what changed after adopting it, closing with a short personal note.
+- First person is 「自分」, not 「筆者」 or 「私」.
+- Include at least one honest personal remark or reservation. Put a one-sentence lead-in before each code block. Write screenshot alt text in Japanese describing the screen.
+- Avoid AI-ish stock phrases (「〜することができます」「〜と言えるでしょう」「重要なのは〜」, and repeated 「実現した」「堅牢な」「大幅に」). The `writing-ja` skill has the full banned list and grep checks.
 
 ## Security & Configuration Tips
 
@@ -43,7 +54,9 @@ Do not commit local secrets, deployment tokens, or generated credentials. Keep c
 
 ## Blog Writing Skills
 
-Globally installed article writing and editing skills (`~/.agents/skills/`):
+The primary skill for writing and polishing posts is `writing-ja`. It is standalone: it merges `japanese-tech-writing`, `human-writing-ja`, and `humanizer-ja`, with conflicts between them resolved against this site's published posts, and includes grep-based verification steps. Prefer it over combining the three source skills manually.
+
+Other available writing skills:
 
 | Skill | Purpose |
 |-------|---------|
@@ -52,9 +65,9 @@ Globally installed article writing and editing skills (`~/.agents/skills/`):
 | `copywriting` | Sales copy, CTAs, and headlines (coreyhaines31/marketingskills) |
 | `blog-writing-guide` | Blog writing style guide (getsentry/skills) |
 
-Typical workflows combining with existing Japanese language skills:
+Typical workflows:
 
 - "Plan the structure of a technical blog post" → `edit-article` + `content-strategy`
-- "Polish this article in Japanese" → `edit-article` + `japanese-tech-writing` + `human-writing-ja`
+- "Write or polish a blog post in Japanese" → `writing-ja`
 - "Write blog post headlines and CTAs" → `copywriting`
 
