@@ -1,12 +1,6 @@
 {
   "version": 1,
   "skills": {
-    "blog-writing-guide": {
-      "source": "getsentry/skills",
-      "sourceType": "github",
-      "skillPath": "skills/blog-writing-guide/SKILL.md",
-      "computedHash": "f885b9890d8a1c43e8ed0386e2ef2c17e941a403aa354513d6b844e99229ffb7"
-    },
     "blog-writing-guide-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
@@ -30,12 +24,6 @@
       "sourceType": "github",
       "skillPath": "skills/productivity/grilling/SKILL.md",
       "computedHash": "1de9e777a60b184b29412fadacb7bbde8c14bb7037e5c4d9d086c941281d1742"
-    },
-    "writing-great-skills": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "skillPath": "skills/productivity/writing-great-skills/SKILL.md",
-      "computedHash": "42fe94c64d7b9acda9ce7d6495a3476893a1b18615986528f55f7162a29789d4"
     },
     "writing-ja": {
       "source": "j1nn0/skills",
