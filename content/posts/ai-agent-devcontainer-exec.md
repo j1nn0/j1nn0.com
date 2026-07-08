@@ -1,7 +1,7 @@
 ---
 title: "AIエージェントをコンテナに入れず、devcontainer execで動かしている話"
 date: 2026-07-07
-draft: true
+draft: false
 tags:
   - ai_agent
   - devcontainer
