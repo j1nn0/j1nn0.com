@@ -7,12 +7,6 @@
       "skillPath": "skills/blog-writing-guide-ja/SKILL.md",
       "computedHash": "e50bbdd6621fc6f9fc2bf8ee601b184ea9a571a6c8bbe79d5f41efa3615a9f8c"
     },
-    "edit-article": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "skillPath": "skills/personal/edit-article/SKILL.md",
-      "computedHash": "8d7aec1987245a27e9c7d585b9f11d1129b8bd8ecb3a8596cdd3048974d9e302"
-    },
     "grill-me": {
       "source": "mattpocock/skills",
       "sourceType": "github",

@@ -21,32 +21,9 @@ Use two-space indentation in YAML, HTML, and CSS to match the existing small-fil
 
 There is no dedicated automated test suite. Validate changes by running `hugo` before committing. For content changes, run `hugo server -D` and inspect the page locally. For metadata, social card, or asset changes, verify the generated HTML in `public/` or the browser output and confirm images resolve from `static/images/`.
 
-## Commit & Pull Request Guidelines
+## Commit Guidelines
 
-Recent commits use short, imperative subjects such as `Fix meta`, `Improve css`, and `Update PaperMod theme to latest version`. Follow that style: keep the first line direct and under about 72 characters. Pull requests should explain the user-visible change, list validation performed, link any related issue, and include screenshots when visual layout, typography, images, or metadata previews change.
-
-## Blog Writing Style Guidelines
-
-Write all blog posts (Markdown files under `content/posts/`) matching the repository's writing style. The complete ruleset, including argumentation rules, the banned-phrase list, and grep-based verification, lives in the `writing-ja` skill; use that skill when writing or polishing posts. The essentials:
-
-Formatting:
-
-- Sentence endings: plain/declarative form ("だ/である" style), mixed with 体言止め and light colloquial phrases. Never polite form ("です/ます" style).
-- One sentence per line (一文一行). Separate paragraphs with an empty line. Keep each paragraph under 240 characters.
-- No bold markdown syntax (`**`) anywhere in the body, lists, quotes, headings, or labels. Use ■ for labels and ※ for notes.
-- No colons (`:` or `：`) to end headings, sentences, quotes, or labels.
-- No em dashes (— or ——), no emoji, no exclamation marks.
-- No middle dots (`・`) for parallel word lists; use `と` or `や` instead.
-- Tag format: underscores (`_`) as word separators in front matter `tags`, never hyphens. For example, `machine_learning` instead of `machine-learning`. Hyphens break hashtag recognition on social platforms like X (Twitter).
-
-Structure and voice:
-
-- Titles state the outcome or change, often in the "〜した話" pattern. Numbers and product names are welcome.
-- No "はじめに", "おわりに", or "まとめ" headings. Sentence-style headings that state the section's conclusion are preferred; avoid paper-style headings like "〜における課題".
-- Post shape: personal problem/trigger → solution overview (table or flow list) → details with the reason behind each choice → what changed after adopting it, closing with a short personal note.
-- First person is 「自分」, not 「筆者」 or 「私」.
-- Include at least one honest personal remark or reservation. Put a one-sentence lead-in before each code block. Write screenshot alt text in Japanese describing the screen.
-- Avoid AI-ish stock phrases (「〜することができます」「〜と言えるでしょう」「重要なのは〜」, and repeated 「実現した」「堅牢な」「大幅に」). The `writing-ja` skill has the full banned list and grep checks.
+Use Conventional Commits format in English. Keep the subject line under 72 characters.
 
 ## Security & Configuration Tips
 
@@ -54,23 +31,16 @@ Do not commit local secrets, deployment tokens, or generated credentials. Keep c
 
 ## Blog Writing Skills
 
-The primary skills for blog posts are `blog-writing-guide-ja` and `writing-ja`. Use them together:
+The writing rules for all posts under `content/posts/` live entirely in the skills below. Do not duplicate those rules here; if AGENTS.md and a skill conflict, the skill wins.
 
 | Skill | Purpose |
 |-------|---------|
 | `blog-writing-guide-ja` | Article planning, structure, headings/titles, SEO, quality bar, and pre-publish review for Japanese tech blog posts |
-| `writing-ja` | Sentence-level style: writing, polishing, and rewriting Japanese prose. Standalone merge of `japanese-tech-writing`, `human-writing-ja`, and `humanizer-ja`, with conflicts resolved against this site's published posts, including grep-based verification steps |
+| `writing-ja` | Sentence-level style: da/de-aru tone, one sentence per line, banned phrases, AI-ish prose removal, and grep-based verification. Standalone merge of `japanese-tech-writing`, `human-writing-ja`, and `humanizer-ja`, resolved against this site's published posts |
 
-Prefer `writing-ja` over combining its three source skills manually.
-
-Other available writing skills:
-
-| Skill | Purpose |
-|-------|---------|
-| `edit-article` | Article structure, editing, and revision (mattpocock/skills) |
+Never use `japanese-tech-writing`, `human-writing-ja`, or `humanizer-ja` directly; always use `writing-ja` instead.
 
 Typical workflows:
 
 - "Plan the structure of a technical blog post" → `blog-writing-guide-ja`
 - "Write or polish a blog post in Japanese" → `blog-writing-guide-ja` + `writing-ja`
-
