@@ -12,7 +12,7 @@ tags:
 Laravel と Vue を使った Web アプリの開発環境は、Dev Container CLI で起動する Docker Compose コンテナの中に置いている。
 PHP や Node.js のランタイムもコンテナ内にある。
 一方で、AI エージェントはホストマシン上で動かしている。
-そのため、エージェントが `php artisan` や `pnpm run build` をそのまま実行すると、前提がずれる。
+そのため、エージェントが `php artisan` や `pnpm run build` をそのまま実行すると、エラーになる。
 
 今は、エージェントには必ず `devcontainer exec` 経由でコマンドを実行させるようにしている。
 コンテナ内にエージェントを入れる案も一度考えたが、アップデートや認証情報や設定の管理が面倒になりそうだった。
