@@ -50,7 +50,7 @@ params:
   label:
     icon: /apple-touch-icon.png
     iconHeight: 30
-  description: "Japanese programmer / Vue, PHP, C#, AWS"
+  description: "Japanese developer / Vue, PHP, C#, AWS"
   defaultTheme: auto
   defaultImage: "https://j1nn0.com/images/ogp-default.png"
   author: j1nn0
@@ -75,7 +75,7 @@ params:
   homeInfoParams:
     Title: "j1nn0 lab"
     Content: |
-      Japanese programmer specializing in Vue, PHP, C#, and AWS.\
+      Japanese developer specializing in Vue, PHP, C#, and AWS.\
       Interested in developer productivity, AI coding assistants, and clean dev environments.
 
   socialIcons:
