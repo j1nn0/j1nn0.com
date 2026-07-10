@@ -1,5 +1,5 @@
 baseURL: https://j1nn0.com/
-title: j1nn0
+title: j1nn0 lab
 theme: ["PaperMod"]
 
 defaultContentLanguage: ja
@@ -73,7 +73,7 @@ params:
   profileMode:
     enabled: false
   homeInfoParams:
-    Title: "j1nn0 note"
+    Title: "j1nn0 lab"
     Content: |
       Japanese programmer specializing in Vue, PHP, C#, and AWS.\
       Interested in developer productivity, AI coding assistants, and clean dev environments.

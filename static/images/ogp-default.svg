@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">j1nn0 note OGP image</title>
-  <desc id="desc">Dark OGP image for j1nn0 note with the new j1 favicon, site title, and programmer profile.</desc>
+  <title id="title">j1nn0 lab OGP image</title>
+  <desc id="desc">Dark OGP image for j1nn0 lab with the new j1 favicon, site title, and programmer profile.</desc>
   <defs>
     <radialGradient id="bgGlow" cx="34%" cy="42%" r="76%">
       <stop offset="0%" stop-color="#183044"/>
@@ -59,7 +59,7 @@
 
   <!-- text block -->
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <text x="500" y="236" fill="#eaf6fb" font-size="78" font-weight="800" letter-spacing="-2.5">j1nn0 note</text>
+    <text x="500" y="236" fill="#eaf6fb" font-size="78" font-weight="800" letter-spacing="-2.5">j1nn0 lab</text>
     <rect x="504" y="268" width="208" height="6" rx="3" fill="url(#cyan)" filter="url(#cyanGlow)"/>
     <text x="500" y="330" fill="#aab9c6" font-size="32" font-weight="500" letter-spacing="0.2">Japanese programmer</text>
 
