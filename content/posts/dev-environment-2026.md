@@ -8,7 +8,8 @@ tags:
   - vscode
   - zed
   - ghostty
-  - terminal
+  - herdr
+  - mise
   - dotfiles
 draft: true
 ---
