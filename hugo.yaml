@@ -86,15 +86,15 @@ params:
     - name: X
       title: X/Twitter
       url: "https://x.com/j1nn0"
-    - name: bluesky
-      title: Bluesky
-      url: "https://bsky.app/profile/j1nn0.com"
-    - name: instagram
-      title: instagram
-      url: "https://www.instagram.com/_j1nn0_/"
-    - name: discord
-      title: Discord
-      url: "https://discordapp.com/users/460995342767357952"
+#    - name: bluesky
+#      title: Bluesky
+#      url: "https://bsky.app/profile/j1nn0.com"
+#    - name: instagram
+#      title: instagram
+#      url: "https://www.instagram.com/_j1nn0_/"
+#    - name: discord
+#      title: Discord
+#      url: "https://discordapp.com/users/460995342767357952"
 
 outputs:
   home:
