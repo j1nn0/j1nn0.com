@@ -74,10 +74,9 @@ params:
     enabled: false
   homeInfoParams:
     Title: "j1nn0 note"
-    Content: >
-      Japanese programmer
-
-      -  (Vue/PHP/C#/AWS)
+    Content: |
+      Japanese programmer specializing in Vue, PHP, C#, and AWS.\
+      Interested in developer productivity, AI coding assistants, and clean dev environments.
 
   socialIcons:
     - name: github
