@@ -75,7 +75,7 @@ params:
   homeInfoParams:
     Title: "j1nn0 lab"
     Content: |
-      Japanese developer specializing in Vue, PHP, C#, and AWS.\
+      Japanese developer working with Vue, PHP, C#, and AWS.\
       Interested in developer productivity, AI coding assistants, and clean dev environments.
 
   socialIcons:
