@@ -83,11 +83,27 @@ h4, h5, h6 {
 
 /* 4. コードブロック・インラインコード */
 code, pre {
-  font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
-  font-size: 0.95em;
-  padding: 0.2em 0.4em;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+:not(pre) > code {
+  font-size: 0.85em;
+  padding: 0.15em 0.3em;
+  background-color: var(--code-bg);
+  border: 1px solid rgba(128, 128, 128, 0.15);
   border-radius: 4px;
-  overflow-x: auto;
+}
+
+h1 code:not(pre code),
+h2 code:not(pre code),
+h3 code:not(pre code),
+h4 code:not(pre code),
+h5 code:not(pre code),
+h6 code:not(pre code) {
+  font-size: 0.9em;
+  padding: 0.1em 0.25em;
+  background-color: rgba(128, 128, 128, 0.08);
+  border: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 /* 5. モバイル最適化 */

@@ -5,9 +5,8 @@ date: 2026-06-30
 tags:
   - oh_my_opencode_slim
   - opencode
-  - ai_agents
+  - ai_agent
   - llm
-draft: false
 ---
 
 ## OpenCode を使い始めてすぐ制限に当たった
