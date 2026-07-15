@@ -21,6 +21,9 @@ menus:
     - name: Posts
       url: posts/
       weight: 5
+    - name: About
+      url: about/
+      weight: 7
     - name: Search
       url: search/
       weight: 10
