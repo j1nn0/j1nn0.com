@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "blog-ops": {
+      "source": "j1nn0/skills",
+      "sourceType": "github",
+      "skillPath": "skills/blog-ops/SKILL.md",
+      "computedHash": "1431ff7501591fe586b8fe57d935c8617200ed9d554e80293f8263b12e4fd2d1"
+    },
     "blog-writing-guide-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
