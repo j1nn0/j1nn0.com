@@ -3,11 +3,9 @@ title: "AIで技術文書をObsidianノートに変換している話"
 slug: obsidian-pdf-to-note
 date: 2026-07-07
 tags:
+  - ai
   - obsidian
   - chatgpt
-  - ai
-  - 個人開発
-  - 読書
 draft: false
 ---
 

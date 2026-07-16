@@ -3,6 +3,7 @@ title: "Hugo + PaperMod + Cloudflare Pages で個人サイトを作りました"
 slug: how-i-built-this-site
 date: 2026-06-26
 tags:
+  - blog
   - hugo
   - papermod
   - cloudflare_pages

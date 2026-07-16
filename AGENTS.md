@@ -17,6 +17,14 @@ There is no `package.json` workflow in this repository, so do not assume `npm te
 
 Use two-space indentation in YAML, HTML, and CSS to match the existing small-file style. Keep Hugo front matter concise and valid YAML. Prefer lowercase, hyphenated slugs for content filenames, for example `content/posts/my-post.md`. Keep custom CSS scoped and readable in `assets/css/extended/custom.css`; avoid broad theme rewrites when a small override is enough.
 
+## Tag Taxonomy
+
+Tags are reader-facing, cross-post navigation, not an index of every technology mentioned in an article. Use three to five tags per post, with broad themes first and products or technologies that are the article's main subject after them. Use lowercase, underscore-separated values in front matter, such as `ai_agent`, `cloudflare_pages`, and `machine_learning`. This keeps shared tags stable and lets PaperMod remove whitespace before passing tags to social-network hashtag URLs.
+
+Tag names determine Hugo's generated term URLs. Do not add redirects merely for a tag rename; first identify the changed term URLs and confirm the desired redirect strategy. When removing a tag, do not redirect it unless there is an unambiguous successor.
+
+Define reader-facing tag names in `content/tags/<internal_value>/_index.md` with a `title`. Keep the article front matter values unchanged for this purpose. PaperMod uses the term title in tag pages and post footers, while its X sharing template uses the article's internal tag values.
+
 ## Testing Guidelines
 
 There is no dedicated automated test suite. Validate changes by running `hugo` before committing. For content changes, run `hugo server -D` and inspect the page locally. For metadata, social card, or asset changes, verify the generated HTML in `public/` or the browser output and confirm images resolve from `static/images/`.

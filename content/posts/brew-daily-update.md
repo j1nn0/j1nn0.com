@@ -3,10 +3,9 @@ title: "ターミナル起動を1秒も遅くせず、Homebrewを裏で安全に
 slug: brew-daily-update
 date: 2026-07-03
 tags:
-  - mac
+  - development_environment
   - homebrew
-  - zsh
-  - 開発環境
+  - macos
 draft: false
 ---
 

@@ -3,10 +3,10 @@ title: "AIサブスクを3つ使い分けてレート制限に悩まなくなっ
 slug: oh-my-opencode-slim-review
 date: 2026-06-30
 tags:
-  - oh_my_opencode_slim
+  - ai
+  - ai_agents
   - opencode
-  - ai_agent
-  - llm
+  - oh_my_opencode_slim
 ---
 
 OpenCode のレート制限を避けるために、月額AIサブスクを3つに分けて使っている。

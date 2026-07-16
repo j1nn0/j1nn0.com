@@ -3,12 +3,10 @@ title: "2026年の開発環境"
 slug: dev-environment-2026
 date: 2026-07-15
 tags:
-  - 開発環境
-  - mac
+  - development_environment
+  - macos
   - terminal
   - editor
-  - mise
-  - dotfiles
 draft: false
 ---
 
