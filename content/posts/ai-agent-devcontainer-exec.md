@@ -9,6 +9,12 @@ tags:
   - vue
 ---
 
+## この記事で分かること
+
+- ホストで動かすAIエージェントから Dev Container 内の PHP と Node.js を実行する方法
+- `devcontainer exec` を使うときの実行ルールとサンドボックスの扱い
+- コンテナ内にAIエージェントを入れない構成を選んだ理由
+
 Laravel と Vue を使った Web アプリの開発環境は、Dev Container CLI で起動する Docker Compose コンテナの中に置いている。
 PHP や Node.js のランタイムもコンテナ内にある。
 一方で、AI エージェントはホストマシン上で動かしている。

@@ -10,6 +10,12 @@ tags:
 draft: false
 ---
 
+## この記事で分かること
+
+- Lazygit をコミット操作に使っている理由
+- aicommit2 でコミットメッセージを生成する設定
+- Lazygit から生成したメッセージを使う流れ
+
 ## Lazygit を選んだ経緯
 
 VSCode の "Generate Commit Message" に慣れきっていたせいで、エディタを乗り換えたとき、コミットメッセージの自動生成も一緒に消えた。
