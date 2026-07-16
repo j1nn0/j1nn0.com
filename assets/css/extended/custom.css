@@ -150,3 +150,31 @@ h6 code:not(pre code) {
     height: 26px;
     width: 26px;
 }
+
+/* 本文画像はクリックで拡大表示できる。 */
+.post-content a.glightbox {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.post-content a.glightbox img {
+  cursor: zoom-in;
+}
+
+.post-content a.glightbox:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+/* MermaidのSVGはライトテーマの文字色を直接出力するため、ダークモードではテーマの文字色に合わせる。 */
+[data-theme="dark"] .mermaid svg text {
+  fill: var(--primary) !important;
+}
+
+[data-theme="dark"] .mermaid svg .messageLine0,
+[data-theme="dark"] .mermaid svg .messageLine1,
+[data-theme="dark"] .mermaid svg marker path {
+  stroke: var(--primary) !important;
+  fill: var(--primary) !important;
+}

@@ -2,4 +2,13 @@
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- end -}}
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({
+    selector: '.post-content a.glightbox',
+    touchNavigation: true,
+    keyboardNavigation: true,
+    closeOnOutsideClick: true
+  });
+</script>
 {{- /* Footer custom content area end */ -}}
