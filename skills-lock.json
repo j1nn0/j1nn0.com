@@ -1,17 +1,23 @@
 {
   "version": 1,
   "skills": {
+    "blog-idea-grilling": {
+      "source": "j1nn0/skills",
+      "sourceType": "github",
+      "skillPath": "skills/blog-idea-grilling/SKILL.md",
+      "computedHash": "0860d05505c3f6b9e94239229626054cb56eb8c135300f8e14e4b8676fe9a0af"
+    },
     "blog-ops": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-ops/SKILL.md",
-      "computedHash": "1431ff7501591fe586b8fe57d935c8617200ed9d554e80293f8263b12e4fd2d1"
+      "computedHash": "ff02b268bdc665f36b726b0fddacfd99cfc26d85b7e5696953c129c1e05a382c"
     },
     "blog-writing-guide-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-writing-guide-ja/SKILL.md",
-      "computedHash": "6b9b5fcb673e76dfc702d11d904b686b6abf0c2872a8ed9762a67d4ed68e8a52"
+      "computedHash": "36086213110f7a30df89924bde01ec769a0e22de2b9d9be6308d49a08ec7e6d9"
     },
     "grill-me": {
       "source": "mattpocock/skills",
@@ -29,7 +35,7 @@
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/writing-ja/SKILL.md",
-      "computedHash": "07f201437f453ff81d48c2b9862a603778f2d618625f910cb6c95efd0ad2b7f9"
+      "computedHash": "ea2dd23b366d2b0c8afa556cd657c0e6121348937e33f494a25b82610841bc0d"
     }
   }
 }

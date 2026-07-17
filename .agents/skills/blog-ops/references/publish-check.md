@@ -7,9 +7,9 @@
 
 1. 機械検査を実行する:
    ```bash
-   python3 .agents/skills/blog-ops/scripts/check_posts.py
+   python3 "$SKILL_DIR/scripts/check_posts.py"
    ```
-   ERROR があれば修正する。WARN は内容を確認し、今回の変更に関係するものだけ対応する。
+   `SKILL_DIR` は、このスキルをインストールした `blog-ops` ディレクトリを指す。本文の inline Markdown 形式の `/images/...` と `/posts/<slug>/` は実在を検査する。HTML、shortcode、参照形式のリンクは目視で確認する。Python 3 がない環境では、この機械検査はスキップした理由を記録し、同じ項目を手動で確認する。ERROR があれば修正する。WARN は内容を確認し、今回の変更に関係するものだけ対応する。
 2. ビルドを確認する:
    ```bash
    hugo --minify
@@ -29,7 +29,7 @@
 ### front matter 変更
 
 - title、date、summary、tags、draft、生成される URL を確認する。
-- YAML として妥当であること(check_posts.py が検証する)。
+- YAML の構文と Hugo による解釈は `hugo --minify` で確認する。`check_posts.py` は title、date、draft、slug、tags などの限定した項目だけを検査する。
 - 公開する記事は `draft: false` になっていること。
 
 ### タグ変更
@@ -45,6 +45,7 @@
 
 - トップページと記事一覧に意図しない本文が露出していないこと。
 - メタデータが意図した summary / description を使っていること。
+- 結論と扱う範囲が前半にあり、タイトルと重ねて読んでも不自然でないこと。基準は `references/new-post.md` を参照する。
 
 ### OGP・メタデータ変更
 
