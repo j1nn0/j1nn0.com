@@ -1,6 +1,6 @@
 <header class="site-header">
   <nav class="site-nav" aria-label="メインナビゲーション">
-    <a class="site-nav__brand" href="{{ "" | absLangURL }}" accesskey="h" title="{{ site.Title }} (Alt + H)">J1NN0 <span>LAB</span></a>
+    <a class="site-nav__brand" href="{{ "" | absLangURL }}" title="{{ site.Title }}">J1NN0 <span>LAB</span></a>
 
     <ul class="site-nav__links">
       {{- range site.Menus.main }}
@@ -18,7 +18,7 @@
     </details>
 
     {{- if not site.Params.disableThemeToggle }}
-    <button id="theme-toggle" class="site-nav__theme" type="button" accesskey="t" title="テーマを切り替え (Alt + T)" aria-label="ライトテーマとダークテーマを切り替え">THEME</button>
+    <button id="theme-toggle" class="site-nav__theme" type="button" title="テーマを切り替え" aria-label="ライトテーマとダークテーマを切り替え">THEME</button>
     {{- end }}
   </nav>
 </header>
