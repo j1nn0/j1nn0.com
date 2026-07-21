@@ -648,6 +648,7 @@ summary:focus-visible {
   gap: var(--space-md);
   justify-content: space-between;
   padding-top: var(--space-md);
+  padding-right: 4rem;
 }
 
 .lab-footer__meta > a,
@@ -661,7 +662,8 @@ summary:focus-visible {
 }
 
 .lab-footer .j1-sns {
-  margin-inline: auto;
+  margin-inline: 0;
+  margin-inline-start: auto;
 }
 
 .lab-footer .j1-sns a {
