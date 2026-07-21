@@ -909,7 +909,7 @@ body:not(.home) .main {
 }
 
 .post-content table {
-  border: var(--rule-bold) solid var(--color-ink);
+  border-collapse: collapse;
 }
 
 .post-content th {
