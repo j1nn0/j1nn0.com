@@ -21,10 +21,11 @@
 {{- else if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
 <body class="list" id="top">
 {{- else }}
-<body id="top">
+<body{{ if eq .Section "posts" }} class="content-post"{{ end }} id="top">
 {{- end }}
+    <a class="skip-link" href="#main-content">本文へ移動</a>
     {{ partialCached "header.html" . .Page -}}
-    <main class="main">
+    <main class="main" id="main-content">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}

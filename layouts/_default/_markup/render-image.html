@@ -13,6 +13,10 @@
   {{- end -}}
 {{- end -}}
 {{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
+{{- if and (not $u.IsAbs) (strings.HasPrefix $u.Path "/images/") -}}
+  {{- $config := images.Config (printf "/static%s" $u.Path) -}}
+  {{- $attributes = merge $attributes (dict "width" (printf "%d" $config.Width) "height" (printf "%d" $config.Height)) -}}
+{{- end -}}
 <a class="glightbox" href="{{ $src | safeURL }}" data-gallery="{{ .Page.RelPermalink }}"{{ with .Title }} data-title="{{ . | transform.HTMLEscape }}"{{ end }}>
   <img
     {{- range $k, $v := $attributes -}}

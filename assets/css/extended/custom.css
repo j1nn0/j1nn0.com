@@ -9,6 +9,25 @@ body {
   word-break: break-word;
 }
 
+.skip-link {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  left: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  position: fixed;
+  top: calc(-1 * var(--space-4xl));
+  transition: top var(--dur-fast) ease;
+  z-index: 100;
+}
+
+.skip-link:focus-visible {
+  outline: var(--rule-bold) solid var(--color-focus);
+  outline-offset: var(--space-2xs);
+  top: var(--space-md);
+}
+
 /* 2. 英数字のみ欧文フォント */
 body :lang(en) {
   font-family: var(--font-display);
@@ -779,7 +798,7 @@ body:not(.home) .main {
   padding: var(--space-xl) 0 var(--space-2xl);
 }
 
-.post-header::before {
+.content-post .post-header::before {
   background: var(--color-accent);
   color: var(--color-accent-ink);
   content: "FIELD NOTE";
@@ -842,6 +861,7 @@ body:not(.home) .main {
   border-top: var(--rule-bold) solid var(--color-ink);
   margin-top: 2.5em;
   padding-top: 0.6em;
+  scroll-margin-top: var(--space-3xl);
 }
 
 .post-content h2::before {
@@ -957,7 +977,7 @@ body:not(.home) .main {
   padding: var(--space-md);
 }
 
-.searchbox #searchInput:focus {
+.searchbox #searchInput:focus-visible {
   box-shadow: 0.5rem 0.5rem 0 var(--color-accent-2);
 }
 
