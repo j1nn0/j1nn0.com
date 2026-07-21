@@ -918,6 +918,15 @@ body:not(.home) .main {
   border-color: var(--color-rule);
 }
 
+/* ライトテーマ: フッター文字色を明るく（.lab-footer__statement + span内のリンク用） */
+[data-theme="light"] .lab-footer {
+  color: var(--color-paper);
+}
+
+[data-theme="light"] .lab-footer .lab-footer__meta a {
+  color: var(--color-paper) !important;
+}
+
 .post-content th {
   background: var(--color-accent);
   color: var(--color-accent-ink);
