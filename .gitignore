@@ -13,3 +13,6 @@ hugo.linux
 /.hugo_build.lock
 
 .DS_Store
+
+# Generated Hallmark design logs
+.hallmark/
