@@ -380,6 +380,7 @@ summary:focus-visible {
   letter-spacing: 0;
   line-height: 1.5;
   margin-top: var(--space-lg);
+  max-width: none;
 }
 
 .lab-hero__route {
@@ -1004,6 +1005,7 @@ body:not(.home) .main {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
+    gap: var(--space-xl);
     min-height: 70svh;
     padding: var(--space-3xl) var(--space-md) var(--space-2xl);
   }
