@@ -1,0 +1,81 @@
+/* Hallmark · pre-emit critique: P5 H4 E5 S5 R4 V5 */
+/* Hallmark · genre: playful · macrostructure: Marquee Hero · theme: Hum · tone: brutalist + playful · anchor hue: pear-yellow · enrichment: none · nav: N7 · footer: Ft5 */
+
+:root {
+  --font-display: "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+  --text-display: clamp(4rem, 12vw, 11rem);
+  --text-display-s: clamp(3rem, 9vw, 7rem);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+  --rule-hair: 1px;
+  --rule-bold: 3px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+
+  --color-paper: oklch(96% 0.025 95);
+  --color-paper-alt: oklch(90% 0.05 95);
+  --color-surface: oklch(99% 0.012 95);
+  --color-ink: oklch(20% 0.035 280);
+  --color-muted: oklch(42% 0.035 280);
+  --color-rule: oklch(20% 0.035 280);
+  --color-accent: oklch(77% 0.19 92);
+  --color-accent-2: oklch(73% 0.14 220);
+  --color-accent-3: oklch(64% 0.19 28);
+  --color-focus: oklch(50% 0.19 220);
+  --color-code: oklch(93% 0.03 220);
+  --color-strong: oklch(20% 0.035 280);
+  --color-inverse: oklch(96% 0.025 95);
+  --color-accent-ink: oklch(20% 0.035 280);
+  --color-transparent: transparent;
+
+  --theme: var(--color-paper);
+  --entry: var(--color-surface);
+  --primary: var(--color-ink);
+  --secondary: var(--color-muted);
+  --tertiary: var(--color-paper-alt);
+  --content: var(--color-ink);
+  --border: var(--color-rule);
+  --code-bg: var(--color-code);
+}
+
+[data-theme="dark"] {
+  --color-paper: oklch(20% 0.035 280);
+  --color-paper-alt: oklch(27% 0.04 280);
+  --color-surface: oklch(24% 0.03 280);
+  --color-ink: oklch(95% 0.025 95);
+  --color-muted: oklch(77% 0.035 95);
+  --color-rule: oklch(95% 0.025 95);
+  --color-accent: oklch(82% 0.17 92);
+  --color-accent-2: oklch(80% 0.12 220);
+  --color-accent-3: oklch(72% 0.17 28);
+  --color-focus: oklch(82% 0.12 220);
+  --color-code: oklch(29% 0.04 280);
+}

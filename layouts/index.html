@@ -1,0 +1,47 @@
+{{- define "main" }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+
+<article class="lab-home">
+  <section class="lab-hero" aria-labelledby="lab-hero-title">
+    <h1 id="lab-hero-title">BUILD THE DETOURS.<span>気になった技術を、試して書き残す。</span></h1>
+    <span class="lab-hero__route" aria-hidden="true">
+      <svg viewBox="0 0 200 200" focusable="false">
+        <path d="M60 0V146H156V200" />
+        <rect x="92" y="55" width="64" height="64" />
+      </svg>
+    </span>
+  </section>
+
+  <section class="lab-social" aria-labelledby="lab-social-title">
+    <div class="lab-social__copy">
+      <h2 id="lab-social-title">更新を追うなら、ここから。</h2>
+      <p>新しい記事や日々の試行は、SNSでも発信しています。</p>
+    </div>
+    {{- partial "social_icons.html" (dict "align" "left") }}
+    <a class="lab-social__jump" href="#latest-posts">記事を読む <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <section class="lab-posts" id="latest-posts" aria-labelledby="latest-posts-title">
+    <header class="lab-posts__head">
+      <h2 id="latest-posts-title">最近の寄り道</h2>
+      <a href="{{ "posts/" | absLangURL }}">すべての記事 <span aria-hidden="true">→</span></a>
+    </header>
+
+    <ol class="lab-posts__list">
+      {{- range $index, $page := first 8 $pages }}
+      <li>
+        <a class="lab-post" href="{{ .RelPermalink }}">
+          <span class="lab-post__index">{{ printf "%02d" (add $index 1) }}</span>
+          <span class="lab-post__main">
+            <span class="lab-post__title">{{ .Title }}</span>
+            {{- with .Summary }}<span class="lab-post__summary">{{ . | plainify | htmlUnescape }}</span>{{ end }}
+          </span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+        </a>
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+</article>
+{{- end }}

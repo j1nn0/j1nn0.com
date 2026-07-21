@@ -11,4 +11,12 @@
     closeOnOutsideClick: true
   });
 </script>
+<footer class="lab-footer">
+  <p class="lab-footer__statement">More code to come.</p>
+  <div class="lab-footer__meta">
+    <a href="{{ "" | absLangURL }}">J1NN0 LAB</a>
+    {{- partial "social_icons.html" (dict "align" "left") }}
+    <span>&copy; {{ now.Year }}</span>
+  </div>
+</footer>
 {{- /* Footer custom content area end */ -}}

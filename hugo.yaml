@@ -55,6 +55,9 @@ params:
   description: "Japanese developer / Vue, PHP, C#, AWS"
   defaultTheme: auto
   defaultImage: "https://j1nn0.com/images/ogp-default.png"
+  assets:
+    theme_color: "#101225"
+    msapplication_TileColor: "#101225"
   author: j1nn0
   twitter: "j1nn0"
   DateFormat: 2006-01-02
