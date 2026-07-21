@@ -912,6 +912,12 @@ body:not(.home) .main {
   border-collapse: collapse;
 }
 
+/* ダークモード: テーブル枠線を明確に */
+[data-theme="dark"] .md-content table th,
+[data-theme="dark"] .md-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+  border-color: var(--color-rule);
+}
+
 .post-content th {
   background: var(--color-accent);
   color: var(--color-accent-ink);
