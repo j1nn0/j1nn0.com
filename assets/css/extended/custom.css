@@ -167,6 +167,13 @@ h6 code:not(pre code) {
   fill: var(--primary) !important;
 }
 
+/* ダークテーマ: lab-social SNSアイコンhover時のコントラスト確保 */
+[data-theme="dark"] .lab-social .j1-sns a:hover,
+[data-theme="dark"] .lab-social .j1-sns a:focus-visible {
+  background: var(--color-accent-ink);
+  color: var(--color-accent);
+}
+
 /* Hallmark · macrostructure: Marquee Hero · tone: brutalist + playful · anchor hue: pear-yellow */
 
 html,
@@ -886,10 +893,19 @@ body:not(.home) .main {
 }
 
 .post-content pre {
+  background: var(--color-code);
   border: var(--rule-bold) solid var(--color-ink);
   border-left: 0.65rem solid var(--color-accent-2);
   border-radius: 0;
   box-shadow: 0.4rem 0.4rem 0 var(--color-strong);
+}
+
+/* ライトモード: 暗いコードブロックに機能的な枠線を付ける */
+[data-theme="light"] .post-content pre {
+  border-top-color: var(--color-paper-alt);
+  border-right-color: var(--color-paper-alt);
+  border-bottom-color: var(--color-paper-alt);
+  box-shadow: none;
 }
 
 .post-content table {
