@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+<rect x="330" y="110" width="540" height="380" fill="#4A90D9" stroke="#F5F0E6" stroke-width="8" transform="rotate(-4 600 300)" />
+<!-- speech bubble (human instruction) -->
+<path d="M 200,200 L 420,200 L 420,260 L 260,260 L 240,290 L 250,260 L 200,260 Z" fill="#F5F0E6" stroke="#101225" stroke-width="4" transform="translate(4,4)" />
+<path d="M 200,200 L 420,200 L 420,260 L 260,260 L 240,290 L 250,260 L 200,260 Z" fill="#F5F0E6" stroke="#101225" stroke-width="4" />
+<text x="310" y="225" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle" >OGP画像を作って</text>
+<text x="310" y="248" font-family="Hiragino Sans, sans-serif" font-size="13" fill="#6B7B8E" text-anchor="middle" >デザインに合わせて</text>
+<!-- arrow -->
+<line x1="440" y1="230" x2="520" y2="230" stroke="#F5F0E6" stroke-width="5" />
+<polygon points="510,220 510,240 528,230" fill="#F5F0E6" />
+<!-- AI agent box -->
+<rect x="548" y="168" width="280" height="200" fill="#101225" />
+<rect x="540" y="160" width="280" height="200" fill="#1A1F3A" stroke="#F5F0E6" stroke-width="5" />
+<text x="680" y="195" font-family="Menlo, monospace" font-size="18" fill="#E8D44D" text-anchor="middle" >AI Agent</text>
+<!-- mini OGP thumbnails -->
+<rect x="565" y="215" width="70" height="40" fill="#C45B3A" stroke="#F5F0E6" stroke-width="3" />
+<rect x="645" y="215" width="70" height="40" fill="#E8D44D" stroke="#F5F0E6" stroke-width="3" />
+<rect x="725" y="215" width="70" height="40" fill="#4A90D9" stroke="#F5F0E6" stroke-width="3" />
+<rect x="565" y="265" width="70" height="40" fill="#E8D44D" stroke="#F5F0E6" stroke-width="3" />
+<rect x="645" y="265" width="70" height="40" fill="#C45B3A" stroke="#F5F0E6" stroke-width="3" />
+<rect x="725" y="265" width="70" height="40" fill="#4A90D9" stroke="#F5F0E6" stroke-width="3" />
+<text x="680" y="335" font-family="Menlo, monospace" font-size="14" fill="#6B7B8E" text-anchor="middle" >11 images generated</text>
+<!-- review checkmark -->
+<circle cx="880" cy="230" r="28" fill="#E8D44D" stroke="#101225" stroke-width="4" />
+<path d="M 866,230 L 874,238 L 896,216" stroke="#101225" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="60" y="540" font-family="Hiragino Sans, sans-serif" font-size="36" fill="#F5F0E6" text-anchor="start" >OGP画像の生成から実装まで</text>
+<text x="60" y="580" font-family="Hiragino Sans, sans-serif" font-size="24" fill="#6B7B8E" text-anchor="start" >AIエージェントに任せた。人間がやったのは2回のレビューだけ</text>
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end" >j1nn0 lab</text>
+</svg>
