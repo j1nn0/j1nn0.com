@@ -44,9 +44,7 @@ PaperModのままだと、他の技術ブログと見分けが付かない。
 
 {{< x user="rammcodes" id="2056754959819915459" >}}
 
-自分には「AI臭を消すスキル」に見えて、気になった。
-日本語の文章では、同じ発想の[`writing-ja`](https://github.com/j1nn0/skills/blob/main/skills/writing-ja/SKILL.md)というスキルを普段から使っている。
-AIが生成するありきたりなデザインにはならないのなら、と期待して使うことにしてみた。
+ざっくり言うと「AI臭を消すスキル」なんだろうなと思い、期待して使ってみた。
 
 モデルには[Kimi K2.6](https://www.kimi.com/ja-jp/ai-models/kimi-k2-6)を選んだ。
 主要モデルのデザイン性能を比較した[Zenn記事](https://zenn.dev/bm_sms/articles/compare-models-design-skill)で、Kimi K2.6は`Opus 4.7`に次ぐ評価だった。
