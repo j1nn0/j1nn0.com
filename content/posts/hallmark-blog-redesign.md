@@ -45,8 +45,8 @@ PaperModのままだと、他の技術ブログと見分けが付かない。
 {{< x user="rammcodes" id="2078859230476714161" >}}
 
 自分には「AI臭を消すスキル」に見えて、気になった。
-自分は日本語の文章からAI臭を消すスキル([`writing-ja`](https://github.com/j1nn0/skills/blob/main/skills/writing-ja/SKILL.md))を普段から使っている。
-文章に効くなら、Webデザインにも同じ発想が使えるはずだと思った。
+日本語の文章では、同じ発想の[`writing-ja`](https://github.com/j1nn0/skills/blob/main/skills/writing-ja/SKILL.md)というスキルを普段から使っている。
+文章に効くなら、Webデザインにも使えるはずだと思った。
 
 モデルには[Kimi K2.6](https://www.kimi.com/ja-jp/ai-models/kimi-k2-6)を選んだ。
 主要モデルのデザイン性能を比較した[Zenn記事](https://zenn.dev/bm_sms/articles/compare-models-design-skill)で、Kimi K2.6は`Opus 4.7`に次ぐ評価だった。
