@@ -42,7 +42,7 @@ PaperModのままだと、他の技術ブログと見分けが付かない。
 
 3回目にどうするか考えていたとき、たまたまXで[Hallmark](https://www.usehallmark.com/)を紹介する[ポスト](https://x.com/rammcodes/status/2078859230476714161)を見かけた。
 
-{{< x user="rammcodes" id="2078859230476714161" >}}
+{{< x user="rammcodes" id="2056754959819915459" >}}
 
 自分には「AI臭を消すスキル」に見えて、気になった。
 日本語の文章では、同じ発想の[`writing-ja`](https://github.com/j1nn0/skills/blob/main/skills/writing-ja/SKILL.md)というスキルを普段から使っている。
