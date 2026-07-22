@@ -1,5 +1,6 @@
 ---
 title: "「PaperModに色を足しただけ」を3回突き返して、ブログをHallmarkで刷新した"
+image: /images/hallmark-blog-redesign/ogp.png
 slug: hallmark-blog-redesign
 date: 2026-07-22
 summary: "PaperModのままだと個性が出ない。デザインの知識もセンスもないまま、AIエージェントにHallmarkでブログ刷新を頼んで3回作り直した経緯を書く。"

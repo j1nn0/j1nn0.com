@@ -1,5 +1,6 @@
 ---
 title: "AIで技術文書をObsidianノートに変換している話"
+image: /images/obsidian-pdf-to-note/ogp.png
 slug: obsidian-pdf-to-note
 date: 2026-07-07
 tags:

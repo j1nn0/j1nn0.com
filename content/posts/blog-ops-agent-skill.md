@@ -1,5 +1,6 @@
 ---
 title: "ブログ運用の暗黙知を、AI エージェントのスキルと検査スクリプトに書き下した話"
+image: /images/blog-ops-agent-skill/ogp.png
 slug: blog-ops-agent-skill
 date: 2026-07-23
 summary: "ブログ運用の暗黙知を blog-ops と検査スクリプトへ分解し、エージェントに任せる範囲と人間が判断する境界を整理した。"

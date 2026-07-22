@@ -1,5 +1,6 @@
 ---
 title: "AIサブスクを3つ使い分けてレート制限に悩まなくなった話"
+image: /images/oh-my-opencode-slim-review/ogp.png
 slug: oh-my-opencode-slim-review
 date: 2026-06-30
 tags:
