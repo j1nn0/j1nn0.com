@@ -16,3 +16,6 @@ hugo.linux
 
 # Generated Hallmark design logs
 .hallmark/
+
+# Local Cloudflare Pages emulation (wrangler pages dev)
+.wrangler/
