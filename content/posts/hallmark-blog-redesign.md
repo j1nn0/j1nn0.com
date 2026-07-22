@@ -40,11 +40,14 @@ PaperModのままだと、他の技術ブログと見分けが付かない。
 
 ## HallmarkとKimi K2.6を選んだ理由
 
-3回目にどうするか考えていたとき、たまたまXで[Hallmark](https://www.usehallmark.com/)を紹介する[ポスト](https://x.com/rammcodes/status/2078859230476714161)を見かけた。
+3回目にどうするか考えていたとき、たまたまXで[Hallmark](https://www.usehallmark.com/)を紹介する[ポスト](https://x.com/rammcodes/status/2056754959819915459)を見かけた。
 
 {{< x user="rammcodes" id="2056754959819915459" >}}
 
-ざっくり言うと「AI臭を消すスキル」なんだろうなと思い、期待して使ってみた。
+ざっくりいうと、AIが作った感じを消すスキルなんだと思った。
+日本語の文章でも、AIが書くとどうしても定型的になりがちな部分を、[`writing-ja`](https://github.com/j1nn0/skills/blob/main/skills/writing-ja/SKILL.md)というスキルで普段から直している。
+同じことがデザインにも言えるはずで、AIに任せるとありきたりな見た目になりやすい。
+Hallmarkはそれを避けるためのスキルだと理解し、使ってみることにした。
 
 モデルには[Kimi K2.6](https://www.kimi.com/ja-jp/ai-models/kimi-k2-6)を選んだ。
 主要モデルのデザイン性能を比較した[Zenn記事](https://zenn.dev/bm_sms/articles/compare-models-design-skill)で、Kimi K2.6は`Opus 4.7`に次ぐ評価だった。
