@@ -34,7 +34,7 @@
     </header>
 
     <ol class="lab-posts__list">
-      {{- range $index, $page := first 8 $pages }}
+      {{- range $index, $page := first 6 $pages }}
       <li>
         <a class="lab-post" href="{{ .RelPermalink }}">
           {{- if .Params.cover.image }}
