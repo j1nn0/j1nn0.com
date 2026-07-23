@@ -1,6 +1,7 @@
 ---
 title: "vanilla-autokanaをフォークして半角カナとIME追跡に対応した話"
-image: /images/vanilla-autokana-npm/ogp.png
+images:
+  - /images/vanilla-autokana-npm/ogp.png
 slug: vanilla-autokana-npm
 date: 2026-07-06
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Vortex Keyboard M0110のVIAキーマップ"
-image: /images/m0110-via-keymap/ogp.png
+images:
+  - /images/m0110-via-keymap/ogp.png
 slug: m0110-via-keymap
 date: 2026-07-16
 tags:

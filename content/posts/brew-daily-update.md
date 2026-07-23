@@ -1,6 +1,7 @@
 ---
 title: "ターミナル起動を1秒も遅くせず、Homebrewを裏で安全に自動更新する"
-image: /images/brew-daily-update/ogp.png
+images:
+  - /images/brew-daily-update/ogp.png
 slug: brew-daily-update
 date: 2026-07-03
 tags:

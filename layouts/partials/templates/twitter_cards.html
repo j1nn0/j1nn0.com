@@ -1,10 +1,8 @@
-{{- /* Site override: theme's version only recognizes .Params.cover.image / .Params.images,
-       but this site's posts use a flat .Params.image front matter key (see extend_head.html
-       history). Without this override, twitter:card falls back to "summary" for every post. */ -}}
+{{- /* Site override: adds a site.Params.defaultImage fallback (theme has none) and uses
+       the site's flat site.Params.twitter handle instead of the theme's
+       site.Params.social.twitter map, which this site doesn't define. */ -}}
 {{- $image := "" }}
-{{- if .Params.image }}
-  {{- $image = .Params.image | absURL }}
-{{- else if .Params.cover.image }}
+{{- if .Params.cover.image }}
   {{- if (ne .Params.cover.relative true) }}
     {{- $image = .Params.cover.image | absURL }}
   {{- else }}

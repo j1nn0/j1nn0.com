@@ -35,9 +35,7 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- if .Params.image -}}
-  <meta property="og:image" content="{{ .Params.image | absURL }}">
-{{- else if .Params.cover.image -}}
+{{- if .Params.cover.image -}}
   {{- if (ne .Params.cover.relative true) }}
     <meta property="og:image" content="{{ .Params.cover.image | absURL }}">
   {{- else}}
