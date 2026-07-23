@@ -1038,6 +1038,38 @@ body:not(.home) .main {
   box-shadow: 0.5rem 0.5rem 0 var(--color-accent-2);
 }
 
+.searchResults li {
+  background: var(--color-surface);
+  border: var(--rule-bold) solid var(--color-ink);
+  border-left: 0.75rem solid var(--color-accent);
+  border-radius: 0;
+  box-shadow: 0.4rem 0.4rem 0 var(--color-strong);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  padding: var(--space-md) var(--space-lg);
+  transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+.searchResults li:nth-of-type(3n + 2) {
+  border-left-color: var(--color-accent-2);
+}
+
+.searchResults li:nth-of-type(3n) {
+  border-left-color: var(--color-accent-3);
+}
+
+.searchResults li:hover,
+.searchResults li:focus-within {
+  box-shadow: 0.6rem 0.6rem 0 var(--color-strong);
+  transform: translate(-0.2rem, -0.2rem);
+}
+
+.searchResults li svg.feather-chevrons-right {
+  color: var(--color-accent-3);
+  flex-shrink: 0;
+}
+
 .not-found {
   border: var(--rule-bold) solid var(--color-ink);
   box-shadow: 0.6rem 0.6rem 0 var(--color-accent-3);
