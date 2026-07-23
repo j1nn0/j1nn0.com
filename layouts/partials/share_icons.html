@@ -25,7 +25,7 @@
 <ul class="share-buttons">
     {{- if (or (cond ($custom) (in $ShareButtons "x") (true)) (cond ($custom) (in $ShareButtons "twitter") (true))) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on x"
+        <a target="_blank" rel="noopener noreferrer" title="Xで共有" aria-label="share {{ $title | plainify }} on x"
             href="https://x.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "tags" -}}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -36,7 +36,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "bluesky") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on bluesky"
+        <a target="_blank" rel="noopener noreferrer" title="Blueskyで共有" aria-label="share {{ $title | plainify }} on bluesky"
             href="https://bsky.app/intent/compose?text={{ $title }}%20-%20{{ $pageurl }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px">
                 <path fill="currentColor"
@@ -51,7 +51,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "linkedin") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on linkedin"
+        <a target="_blank" rel="noopener noreferrer" title="LinkedInで共有" aria-label="share {{ $title | plainify }} on linkedin"
             href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $pageurl }}&amp;title={{ $title }}&amp;summary={{ $title }}&amp;source={{ $pageurl }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -62,7 +62,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "reddit") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on reddit"
+        <a target="_blank" rel="noopener noreferrer" title="Redditで共有" aria-label="share {{ $title | plainify }} on reddit"
             href="https://reddit.com/submit?url={{ $pageurl }}&title={{ $title }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -73,7 +73,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on facebook"
+        <a target="_blank" rel="noopener noreferrer" title="Facebookで共有" aria-label="share {{ $title | plainify }} on facebook"
             href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -84,7 +84,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on whatsapp"
+        <a target="_blank" rel="noopener noreferrer" title="WhatsAppで共有" aria-label="share {{ $title | plainify }} on whatsapp"
             href="https://api.whatsapp.com/send?text={{ $title }}%20-%20{{ $pageurl }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
@@ -95,7 +95,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "telegram") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on telegram"
+        <a target="_blank" rel="noopener noreferrer" title="Telegramで共有" aria-label="share {{ $title | plainify }} on telegram"
             href="https://telegram.me/share/url?text={{ $title }}&amp;url={{ $pageurl }}">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
@@ -106,7 +106,7 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "ycombinator") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on ycombinator"
+        <a target="_blank" rel="noopener noreferrer" title="Hacker Newsに投稿" aria-label="share {{ $title | plainify }} on ycombinator"
             href="https://news.ycombinator.com/submitlink?t={{ $title }}&u={{ $pageurl }}">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
