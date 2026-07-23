@@ -1,3 +1,9 @@
+{{- /* Site override: this file differs from the theme default in two places.
+       (1) og:image falls back to site.Params.defaultImage when no cover/page image
+           exists, so non-post pages (home, about, tags) still get an image.
+       (2) og:locale reads site.Language.Locale/.Lang instead of the theme's
+           site.Language.LanguageCode, matching this site's languages.ja.locale
+           config (see hugo.yaml). */ -}}
 <meta property="og:url" content="{{ .Permalink }}">
 
 {{- with or site.Title site.Params.title | plainify }}
@@ -8,10 +14,11 @@
   <meta property="og:title" content="{{ . }}">
 {{- end }}
 
-{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
-  <meta property="og:description" content="{{ . }}">
+{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape }}
+  <meta property="og:description" content="{{ trim . "\n\r\t " }}">
 {{- end }}
 
+{{- /* (2) site config uses languages.ja.locale, not the legacy languageCode key */ -}}
 {{- with or .Params.locale site.Language.Locale site.Language.Lang }}
   <meta property="og:locale" content="{{ . }}">
 {{- end }}
@@ -48,6 +55,7 @@
       <meta property="og:image" content="{{ .Permalink }}">
     {{- end }}
   {{- else }}
+    {{- /* (1) fallback so pages without a cover/page image still get an og:image */ -}}
     {{- with site.Params.defaultImage }}
       <meta property="og:image" content="{{ . }}">
     {{- end }}

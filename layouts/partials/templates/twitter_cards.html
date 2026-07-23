@@ -1,6 +1,8 @@
-{{- /* Site override: adds a site.Params.defaultImage fallback (theme has none) and uses
-       the site's flat site.Params.twitter handle instead of the theme's
-       site.Params.social.twitter map, which this site doesn't define. */ -}}
+{{- /* Site override: this file differs from the theme default in two places.
+       (1) twitter:image falls back to site.Params.defaultImage when no cover/page
+           image exists (theme has no such fallback).
+       (2) twitter:site/creator reads the site's flat site.Params.twitter instead of
+           the theme's site.Params.social.twitter map, which this site doesn't define. */ -}}
 {{- $image := "" }}
 {{- if .Params.cover.image }}
   {{- if (ne .Params.cover.relative true) }}
@@ -13,6 +15,7 @@
   {{- with index $pageImages 0 }}
     {{- $image = .Permalink }}
   {{- else }}
+    {{- /* (1) fallback so pages without a cover/page image still get a twitter:image */ -}}
     {{- with site.Params.defaultImage }}
       {{- $image = . }}
     {{- end }}
@@ -34,6 +37,7 @@
 <meta name="twitter:description" content="{{ trim . "\n\r\t " }}">
 {{- end }}
 
+{{- /* (2) site config uses a flat twitter param, not social.twitter */ -}}
 {{- with site.Params.twitter }}
 <meta name="twitter:site" content="@{{ . }}">
 <meta name="twitter:creator" content="@{{ . }}">
