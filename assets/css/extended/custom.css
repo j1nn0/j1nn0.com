@@ -174,6 +174,22 @@ h6 code:not(pre code) {
   color: var(--color-accent);
 }
 
+/* ダークテーマ: 黄色面では濃色文字を使い、操作ラベルのコントラストを保つ */
+[data-theme="dark"] .site-nav__brand span,
+[data-theme="dark"] .site-nav__theme,
+[data-theme="dark"] .site-nav__mobile summary,
+[data-theme="dark"] .lab-social h2 {
+  color: var(--color-accent-ink);
+}
+
+/* フッター内リンクを本文と区別し、キーボード以外でも認識できるようにする */
+.lab-footer__meta > span a {
+  color: var(--color-inverse);
+  text-decoration: underline;
+  text-decoration-thickness: var(--rule-hair);
+  text-underline-offset: var(--space-2xs);
+}
+
 /* Hallmark · macrostructure: Marquee Hero · tone: brutalist + playful · anchor hue: pear-yellow */
 
 html,
@@ -697,7 +713,7 @@ summary:focus-visible {
 .lab-footer .j1-sns a:hover,
 .lab-footer .j1-sns a:focus-visible {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-accent-ink);
 }
 
 /* Hallmark · non-home pages: field notes + experiment cards */
@@ -948,7 +964,7 @@ body:not(.home) .main {
   color: var(--color-paper);
 }
 
-[data-theme="light"] .lab-footer .lab-footer__meta a {
+[data-theme="light"] .lab-footer .lab-footer__meta > span a {
   color: var(--color-paper) !important;
 }
 
