@@ -104,12 +104,12 @@ params:
       Written by a developer working with Vue, PHP, C#, and AWS.
 
   socialIcons:
-    - name: github
-      title: Github
-      url: "https://github.com/j1nn0"
     - name: X
       title: X/Twitter
       url: "https://x.com/j1nn0"
+    - name: github
+      title: Github
+      url: "https://github.com/j1nn0"
 #    - name: bluesky
 #      title: Bluesky
 #      url: "https://bsky.app/profile/j1nn0.com"
