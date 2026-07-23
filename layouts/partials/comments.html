@@ -1,20 +1,53 @@
 {{- /* Site override: theme leaves this hook empty (see
        https://gohugo.io/content-management/comments/). Wires up giscus
        (GitHub Discussions-backed comments) against the j1nn0/j1nn0.com repo's
-       "General" category, mapped one discussion per post pathname. */ -}}
-<script src="https://giscus.app/client.js"
-  data-repo="j1nn0/j1nn0.com"
-  data-repo-id="R_kgDONrbr3g"
-  data-category="General"
-  data-category-id="DIC_kwDONrbr3s4DAada"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="preferred_color_scheme"
-  data-lang="ja"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async>
+       "General" category, mapped one discussion per post pathname.
+
+       giscus's own "preferred_color_scheme" theme follows the OS setting,
+       not PaperMod's manual light/dark toggle (see layouts/PaperMod
+       footer.html #theme-toggle, which only flips html[data-theme] and
+       localStorage). When the two disagree, giscus renders its reaction
+       counts in the wrong palette against our background ("0件のリアクション"
+       barely visible). Load the script with data-theme matching the
+       current html[data-theme] instead, and postMessage a theme update to
+       the giscus iframe whenever the toggle is clicked. */ -}}
+<script>
+(function () {
+    function currentTheme() {
+        return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+    }
+
+    var script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.setAttribute("data-repo", "j1nn0/j1nn0.com");
+    script.setAttribute("data-repo-id", "R_kgDONrbr3g");
+    script.setAttribute("data-category", "General");
+    script.setAttribute("data-category-id", "DIC_kwDONrbr3s4DAada");
+    script.setAttribute("data-mapping", "pathname");
+    script.setAttribute("data-strict", "0");
+    script.setAttribute("data-reactions-enabled", "1");
+    script.setAttribute("data-emit-metadata", "0");
+    script.setAttribute("data-input-position", "top");
+    script.setAttribute("data-theme", currentTheme());
+    script.setAttribute("data-lang", "ja");
+    script.setAttribute("data-loading", "lazy");
+    script.crossOrigin = "anonymous";
+    script.async = true;
+    document.currentScript.parentNode.appendChild(script);
+
+    var toggle = document.getElementById("theme-toggle");
+    if (!toggle) return;
+    toggle.addEventListener("click", function () {
+        // Run after footer.html's own click handler has flipped
+        // html[data-theme], so currentTheme() reads the new value.
+        setTimeout(function () {
+            var iframe = document.querySelector("iframe.giscus-frame");
+            if (!iframe) return;
+            iframe.contentWindow.postMessage(
+                { giscus: { setConfig: { theme: currentTheme() } } },
+                "https://giscus.app"
+            );
+        }, 0);
+    });
+})();
 </script>
