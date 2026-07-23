@@ -3,11 +3,6 @@
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- end -}}
-<!-- Open Graph / Facebook -->
-<meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ site.Params.defaultImage }}{{ end }}">
-<!-- Twitter Card -->
-<meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
-<meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ site.Params.defaultImage }}{{ end }}">
 <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
 {{- if eq (.Param "slug") "hallmark-blog-redesign" }}

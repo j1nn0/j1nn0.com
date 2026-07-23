@@ -12,6 +12,7 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts"]
+timeZone: Asia/Tokyo
 
 minify:
   disableXML: true
@@ -52,7 +53,7 @@ params:
   label:
     icon: /apple-touch-icon.png
     iconHeight: 30
-  description: "Japanese developer / Vue, PHP, C#, AWS"
+  description: "Detours through dev environment, AI tools, and things I tried and wrote down."
   defaultTheme: auto
   defaultImage: "https://j1nn0.com/images/ogp-default.png"
   assets:
@@ -80,8 +81,8 @@ params:
   homeInfoParams:
     Title: "j1nn0 lab"
     Content: |
-      Japanese developer working with Vue, PHP, C#, and AWS.\
-      Interested in developer productivity, AI coding assistants, and clean dev environments.
+      Detours through dev environment, AI tools, and things I tried and wrote down.\
+      Written by a developer working with Vue, PHP, C#, and AWS.
 
   socialIcons:
     - name: github

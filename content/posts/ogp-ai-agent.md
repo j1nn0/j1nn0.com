@@ -2,7 +2,7 @@
 title: "OGP画像の生成から実装までAIエージェントに任せた。人間がやったのは2回のレビューだけ"
 slug: ogp-ai-agent
 image: /images/ogp-ai-agent/ogp.png
-date: 2026-07-22
+date: 2026-07-23
 summary: "ブログに記事ごとのOGP画像がなかった。OpenCodeに2行の指示を渡して生成からHugo実装まで任せ、人間がやったのは成果物のレビューだけだった。"
 tags:
   - blog

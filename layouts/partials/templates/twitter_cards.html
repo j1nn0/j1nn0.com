@@ -1,0 +1,42 @@
+{{- /* Site override: theme's version only recognizes .Params.cover.image / .Params.images,
+       but this site's posts use a flat .Params.image front matter key (see extend_head.html
+       history). Without this override, twitter:card falls back to "summary" for every post. */ -}}
+{{- $image := "" }}
+{{- if .Params.image }}
+  {{- $image = .Params.image | absURL }}
+{{- else if .Params.cover.image }}
+  {{- if (ne .Params.cover.relative true) }}
+    {{- $image = .Params.cover.image | absURL }}
+  {{- else }}
+    {{- $image = (path.Join .RelPermalink .Params.cover.image) | absURL }}
+  {{- end }}
+{{- else }}
+  {{- $pageImages := partial "templates/_funcs/get-page-images" . }}
+  {{- with index $pageImages 0 }}
+    {{- $image = .Permalink }}
+  {{- else }}
+    {{- with site.Params.defaultImage }}
+      {{- $image = . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if $image }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $image }}">
+{{- else }}
+<meta name="twitter:card" content="summary">
+{{- end }}
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+<meta name="twitter:title" content="{{ . }}">
+{{- end }}
+
+{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape }}
+<meta name="twitter:description" content="{{ trim . "\n\r\t " }}">
+{{- end }}
+
+{{- with site.Params.twitter }}
+<meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}">
+{{- end }}
