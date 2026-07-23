@@ -571,7 +571,7 @@ summary:focus-visible {
   color: var(--color-ink);
   display: grid;
   gap: var(--space-md);
-  grid-template-columns: minmax(3rem, 0.35fr) minmax(0, 2.4fr) minmax(7rem, 0.45fr);
+  grid-template-columns: minmax(5.5rem, 8rem) minmax(2.5rem, 0.3fr) minmax(0, 2.2fr) minmax(6rem, 0.4fr);
   padding: var(--space-xl) var(--space-sm);
   position: relative;
   text-decoration: none;
@@ -582,6 +582,25 @@ summary:focus-visible {
 .lab-post:focus-visible {
   background: var(--color-paper-alt);
   transform: translateX(var(--space-sm));
+}
+
+.lab-post__thumb {
+  aspect-ratio: 16 / 9;
+  background: var(--color-paper-alt);
+  border: var(--rule-bold) solid var(--color-ink);
+  box-shadow: 0.3rem 0.3rem 0 var(--color-strong);
+  overflow: hidden;
+}
+
+.lab-post__thumb .entry-cover,
+.lab-post__thumb img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.lab-post__thumb img {
+  object-fit: cover;
 }
 
 .lab-post__index,
@@ -1078,6 +1097,12 @@ body:not(.home) .main {
 
   .lab-post__index {
     grid-column: 1 / -1;
+  }
+
+  .lab-post__thumb {
+    aspect-ratio: 21 / 9;
+    grid-column: 1 / -1;
+    margin-bottom: var(--space-xs);
   }
 
   .lab-post time {

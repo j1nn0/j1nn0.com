@@ -2,6 +2,8 @@
 title: "Hugo + PaperMod + Cloudflare Pages で個人サイトを作りました"
 images:
   - /images/how-i-built-this-site/ogp.png
+cover:
+  image: images/how-i-built-this-site/ogp.png
 slug: how-i-built-this-site
 date: 2026-06-26
 tags:

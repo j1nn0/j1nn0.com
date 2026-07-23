@@ -2,6 +2,8 @@
 title: "Lazygit × aicommit2 で AI コミットメッセージ生成を組み込む"
 images:
   - /images/lazygit-aicommit2/ogp.png
+cover:
+  image: images/lazygit-aicommit2/ogp.png
 slug: lazygit-aicommit2
 date: 2026-07-02
 tags:

@@ -32,6 +32,11 @@
       {{- range $index, $page := first 8 $pages }}
       <li>
         <a class="lab-post" href="{{ .RelPermalink }}">
+          {{- if .Params.cover.image }}
+          <span class="lab-post__thumb">
+            {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" false) }}
+          </span>
+          {{- end }}
           <span class="lab-post__index">{{ printf "%02d" (add $index 1) }}</span>
           <span class="lab-post__main">
             <span class="lab-post__title">{{ .Title }}</span>

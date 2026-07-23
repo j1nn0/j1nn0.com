@@ -2,6 +2,8 @@
 title: "2026年の開発環境"
 images:
   - /images/dev-environment-2026/ogp.png
+cover:
+  image: images/dev-environment-2026/ogp.png
 slug: dev-environment-2026
 date: 2026-07-15
 tags:

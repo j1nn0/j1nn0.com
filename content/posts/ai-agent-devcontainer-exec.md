@@ -2,6 +2,8 @@
 title: "AIエージェントをコンテナに入れず、devcontainer execで動かしている話"
 images:
   - /images/ai-agent-devcontainer-exec/ogp.png
+cover:
+  image: images/ai-agent-devcontainer-exec/ogp.png
 date: 2026-07-07
 draft: false
 tags:

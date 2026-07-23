@@ -14,6 +14,25 @@ pygmentsUseClasses: true
 mainsections: ["posts"]
 timeZone: Asia/Tokyo
 
+module:
+  mounts:
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: content
+      target: content
+    - source: data
+      target: data
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+    - source: static
+      target: static
+    - source: static/images
+      target: assets/images
+
 minify:
   disableXML: true
 
