@@ -39,7 +39,23 @@
         <a class="lab-post" href="{{ .RelPermalink }}">
           {{- if .Params.cover.image }}
           <span class="lab-post__thumb">
-            {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" false) }}
+            {{- $cover := resources.Get .Params.cover.image -}}
+            {{- if $cover -}}
+              {{- $small := $cover.Resize "360x webp" -}}
+              {{- $medium := $cover.Resize "480x webp" -}}
+              {{- $large := $cover.Resize "720x webp" -}}
+              {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) -}}
+              <img
+                loading="lazy"
+                srcset="{{ $small.RelPermalink }} 360w, {{ $medium.RelPermalink }} 480w, {{ $large.RelPermalink }} 720w"
+                src="{{ $large.RelPermalink }}"
+                sizes="(max-width: 767px) calc(100vw - 2rem), 8rem"
+                width="{{ printf "%d" $cover.Width }}"
+                height="{{ printf "%d" $cover.Height }}"
+                alt="{{ $alt }}">
+            {{- else -}}
+              {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" false) }}
+            {{- end }}
           </span>
           {{- end }}
           <span class="lab-post__index">{{ printf "%02d" (add $index 1) }}</span>

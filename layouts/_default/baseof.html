@@ -5,11 +5,12 @@
            can be targeted by .home .main in custom.css.
        (3) adds a "content-post" body class on posts, used by custom.css for
            the "FIELD NOTE" post-header badge.
-       (4) adds a skip-link for keyboard/screen-reader users, and passes
+       (4) adds a skip-link for keyboard/screen-reader users, passes
            .Layout .Kind (not .Page) as header.html's cache-variant args,
            since the site's header.html no longer highlights the active
            menu item and can safely be cached per layout/kind instead of
-           per page. */ -}}
+           per page, and includes .Section in footer.html's cache variant
+           because extend_footer.html loads GLightbox only for posts. */ -}}
 {{- if lt hugo.Version "0.146.0" }}
 {{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
 {{- end -}}
@@ -40,7 +41,7 @@
     <main class="main" id="main-content">
         {{- block "main" . }}{{ end }}
     </main>
-    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    {{ partialCached "footer.html" . .Layout .Kind .Section (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>
 
 </html>
