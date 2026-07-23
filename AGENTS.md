@@ -4,7 +4,7 @@ This repository is a Hugo static site for `j1nn0.com` using the PaperMod theme, 
 
 ## Entry Point: blog-ops Skill
 
-All work in this repository — discussing article ideas, writing or editing posts, publishing, tags, metadata, layout, configuration — starts with the `blog-ops` skill. It routes each stage to the right skill (`grilling` / `grill-me` for idea vetting, `blog-writing-guide-ja` + `writing-ja` for writing) and defines the default conventions: new post setup, pre-publish validation, tag taxonomy, coding style, scope control, and commit guidelines.
+All work in this repository — discussing article ideas, writing or editing posts, publishing, tags, metadata, layout, configuration — starts with the `blog-ops` skill. It routes each stage to the right skill (`blog-idea-grilling` for idea vetting, `blog-writing-guide-ja` + `writing-ja` for writing) and defines the default conventions: new post setup, pre-publish validation, tag taxonomy, coding style, scope control, and commit guidelines.
 
 If your environment does not load skills automatically, read `.agents/skills/blog-ops/SKILL.md` directly and follow its routing.
 
