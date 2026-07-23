@@ -1,3 +1,11 @@
+{{- /* Site override: full rewrite for the Hallmark visual redesign, replacing the
+       theme's default nav (logo image, language switcher, active-link
+       highlighting) with a simpler brand + menu + mobile-details nav.
+       Deliberately dropped: the logo-image/iconSVG option (this site just
+       types the wordmark) and the language switcher (single-language site).
+       Kept for compatibility with the theme's footer.html script:
+       id="theme-toggle" on the toggle button (that ID is what
+       footer.html's inline <script> binds its click handler to). */ -}}
 <header class="site-header">
   <nav class="site-nav" aria-label="メインナビゲーション">
     <a class="site-nav__brand" href="{{ "" | absLangURL }}" title="{{ site.Title }}">J1NN0 <span>LAB</span></a>

@@ -1,3 +1,8 @@
+{{- /* Site override: no theme equivalent (PaperMod doesn't ship Mermaid support).
+       Renders ```mermaid fenced code blocks as diagrams via the Mermaid ESM
+       build loaded per-render. Version is pinned to mermaid@11 deliberately —
+       an unpinned "latest" URL previously broke diagram rendering after an
+       upstream major-version bump. */ -}}
 <div class="mermaid">
 {{ .Inner | safeHTML }}
 </div>

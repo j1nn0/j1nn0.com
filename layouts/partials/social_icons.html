@@ -1,3 +1,7 @@
+{{- /* Site override: only change is the wrapper class, "social-icons" ->
+       "j1-sns". Some ad/tracker blockers hide elements matching the generic
+       "social-icons" class by name, which silently hid these links for
+       affected visitors. */ -}}
 <div class="j1-sns" {{ with .align}}align="{{.}}" {{- end }}>
     {{- range site.Params.socialIcons }}
     <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"

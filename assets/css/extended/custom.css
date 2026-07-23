@@ -207,6 +207,10 @@ summary:focus-visible {
   outline-offset: var(--space-2xs);
 }
 
+/* Theme's default header/footer markup (layouts/partials/header.html emits
+   .site-header instead; the theme's own footer.html — kept unmodified for its
+   theme-toggle/scroll-to-top/code-copy scripts — still renders its .footer
+   block, replaced visually by .lab-footer in extend_footer.html). */
 .header,
 .footer {
   display: none;

@@ -1,3 +1,8 @@
+{{- /* Site override: no theme equivalent (PaperMod's home page falls through to
+       list.html/home_info.html/profileMode). This is a bespoke Hallmark-redesign
+       homepage — hero statement, SNS callout, and a compact "LATEST DETOURS"
+       post list (see layouts/_default/list.html for the generic list used by
+       /posts/, tags, and other section/taxonomy pages instead). */ -}}
 {{- define "main" }}
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}

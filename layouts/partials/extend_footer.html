@@ -1,5 +1,12 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+{{- /* Site note: this hook renders AFTER the theme's own footer.html partial
+       (theme/_partials/footer.html), which is kept unmodified for its
+       theme-toggle/scroll-to-top/code-copy scripts but whose visible
+       <footer class="footer"> markup is hidden via `.header, .footer { display:
+       none; }` in custom.css. The <footer class="lab-footer"> below is this
+       site's actual visible footer. GLightbox init pairs with the glightbox
+       links added in _default/_markup/render-image.html. */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- end -}}
 <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>

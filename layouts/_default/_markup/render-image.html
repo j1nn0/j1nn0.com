@@ -1,3 +1,9 @@
+{{- /* Site override: wraps every content image in a GLightbox anchor (paired with
+       the glightbox init script in extend_footer.html) so post images open in a
+       lightbox on click. Also reads width/height for local /images/... paths
+       directly off the static file (images.Config on /static/images/...) since
+       these images are static passthrough files, not page/global resources,
+       and wouldn't otherwise get explicit dimensions to prevent layout shift. */ -}}
 {{- $u := urls.Parse .Destination -}}
 {{- $src := $u.String -}}
 {{- if not $u.IsAbs -}}

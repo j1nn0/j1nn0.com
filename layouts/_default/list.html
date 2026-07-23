@@ -1,4 +1,9 @@
-{{- /* Derived from PaperMod (MIT) — https://github.com/adityatelange/hugo-PaperMod */ -}}
+{{- /* Derived from PaperMod (MIT) — https://github.com/adityatelange/hugo-PaperMod
+       Near-verbatim copy of the theme's list.html (needed only because
+       layouts/index.html replaces the home page and this file still backs
+       /posts/, /tags/, and other section/taxonomy lists). The one deliberate
+       change is a typographic ellipsis (…) in the truncated summary instead
+       of "...". Re-diff against the theme after upgrading PaperMod. */ -}}
 {{- define "main" }}
 
 {{- if (and site.Params.profileMode.enabled .IsHome) }}

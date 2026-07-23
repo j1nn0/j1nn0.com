@@ -1,3 +1,8 @@
+{{- /* Site override: based on Hugo's built-in RSS template (author email/name
+       deprecation fallback, versioned generator tag) merged with PaperMod's
+       image block. <language> reads site.Language.Locale, not the theme's
+       site.Language.LanguageCode, to match this site's languages.ja.locale
+       config (see hugo.yaml). */ -}}
 {{- /* Deprecate site.Author.email in favor of site.Params.author.email */}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}

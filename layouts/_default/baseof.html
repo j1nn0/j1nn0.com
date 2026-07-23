@@ -1,3 +1,15 @@
+{{- /* Site override: differs from the theme default in four places.
+       (1) .Language.Direction, not the theme's .Language.LanguageDirection,
+           matching this site's languages.ja config (see hugo.yaml).
+       (2) adds a "home" body class so the custom homepage (layouts/index.html)
+           can be targeted by .home .main in custom.css.
+       (3) adds a "content-post" body class on posts, used by custom.css for
+           the "FIELD NOTE" post-header badge.
+       (4) adds a skip-link for keyboard/screen-reader users, and passes
+           .Layout .Kind (not .Page) as header.html's cache-variant args,
+           since the site's header.html no longer highlights the active
+           menu item and can safely be cached per layout/kind instead of
+           per page. */ -}}
 {{- if lt hugo.Version "0.146.0" }}
 {{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
 {{- end -}}

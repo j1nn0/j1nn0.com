@@ -1,3 +1,6 @@
+{{- /* Site override: no theme equivalent (PaperMod doesn't ship a render-link hook).
+       Opens external links (not pointing at site.BaseURL) in a new tab with
+       rel="noopener", so readers don't lose the post when following outbound links. */ -}}
 {{- $isExternal := and (hasPrefix .Destination "http") (not (hasPrefix .Destination site.BaseURL)) -}}
 <a href="{{ .Destination | safeURL }}"
   {{- with .Title }} title="{{ . }}"{{ end -}}
