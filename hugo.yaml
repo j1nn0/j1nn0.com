@@ -4,15 +4,50 @@ theme: ["PaperMod"]
 
 defaultContentLanguage: ja
 hasCJKLanguage: true
+timeZone: Asia/Tokyo
+
+mainsections: ["posts"]
+
+buildDrafts: false
+buildExpired: false
+buildFuture: false
+
+enableEmoji: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
-timeZone: Asia/Tokyo
+
+languages:
+  ja:
+    direction: ltr
+    label: "Japanese"
+    locale: ja-JP
+    weight: 1
+
+taxonomies:
+  category: categories
+  tag: tags
+
+pagination:
+  pagerSize: 5
+
+menus:
+  main:
+    - name: Posts
+      url: posts/
+      weight: 5
+    - name: About
+      url: about/
+      weight: 7
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 15
+    - name: Archive
+      url: archives
+      weight: 20
 
 module:
   mounts:
@@ -36,66 +71,34 @@ module:
 minify:
   disableXML: true
 
-menus:
-  main:
-    - name: Posts
-      url: posts/
-      weight: 5
-    - name: About
-      url: about/
-      weight: 7
-    - name: Search
-      url: search/
-      weight: 10
-    - name: Tags
-      url: tags/
-      weight: 15
-    - name: Archive
-      url: archives
-      weight: 20
-
-taxonomies:
-  category: categories
-  tag: tags
-
-pagination:
-  pagerSize: 5
-
-languages:
-  ja:
-    locale: ja-JP
-    label: "Japanese"
-    direction: ltr
-    weight: 1
-
 params:
-  label:
-    icon: /apple-touch-icon.png
-    iconHeight: 30
-  description: "Detours through dev environment, AI tools, and things I tried and wrote down."
-  defaultTheme: auto
-  defaultImage: "https://j1nn0.com/images/ogp-default.png"
-  assets:
-    theme_color: "#101225"
-    msapplication_TileColor: "#101225"
   author: j1nn0
+  description: "Detours through dev environment, AI tools, and things I tried and wrote down."
+  defaultImage: "https://j1nn0.com/images/ogp-default.png"
+  defaultTheme: auto
   twitter: "j1nn0"
   DateFormat: 2006-01-02
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
+  assets:
+    msapplication_TileColor: "#101225"
+    theme_color: "#101225"
+  label:
+    icon: /apple-touch-icon.png
+    iconHeight: 30
+
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowWordCount: false
   ShowFullTextinRSS: true
-  ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  showtoc: true
-  tocopen: true
-  disableScrollToTop: false
+  ShowPostNavLinks: true
+  ShowReadingTime: true
+  ShowRssButtonInSectionTermList: true
+  ShowShareButtons: true
+  ShowWordCount: false
+
   comments: true
+  disableScrollToTop: false
   profileMode:
     enabled: false
   homeInfoParams:
@@ -103,6 +106,8 @@ params:
     Content: |
       Detours through dev environment, AI tools, and things I tried and wrote down.\
       Written by a developer working with Vue, PHP, C#, and AWS.
+  showtoc: true
+  tocopen: true
 
   socialIcons:
     - name: X
