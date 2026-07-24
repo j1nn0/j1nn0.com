@@ -15,7 +15,9 @@ buildFuture: false
 enableEmoji: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
-pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
 
 languages:
   ja:

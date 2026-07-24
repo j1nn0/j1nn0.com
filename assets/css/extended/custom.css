@@ -941,6 +941,17 @@ body:not(.home) .main {
   box-shadow: 0.4rem 0.4rem 0 var(--color-strong);
 }
 
+/* Chroma のテーマ別スタイルをコード要素まで通す。 */
+.post-content .highlight pre code {
+  background: inherit !important;
+  color: inherit;
+}
+
+/* Hugo の選択スタイルに未定義のトークンを PaperMod の旧配色から切り離す。 */
+[data-theme] .chroma :where(span) {
+  color: inherit;
+}
+
 /* ライトモード: 暗いコードブロックに機能的な枠線を付ける */
 [data-theme="light"] .post-content pre {
   border-top-color: var(--color-paper-alt);
