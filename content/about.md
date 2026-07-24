@@ -27,7 +27,7 @@ Vue、PHP、C#、AWSを使ったプロダクトの開発と運用をしている
 | ホスティング | Cloudflare Pages |
 | ドメイン | Cloudflare Registrar |
 
-カスタマイズは、フォント、OGP、セキュリティヘッダーなど、必要な範囲に抑えている。テーマ本体はGit submoduleで管理し、アップデートに追従しやすい状態を保っている。
+テーマ本体はGit submoduleで管理し、アップデートに追従しやすい状態を保っている。PaperModをベースに、[Hallmark](https://www.usehallmark.com/)を使って見た目を大きく作り直し、トップページやfavicon、OGP画像に「DETOURS」というブランドを持たせている。経緯は[「PaperModに色を足しただけ」を3回突き返して、ブログをHallmarkで刷新した](/posts/hallmark-blog-redesign/)に書いた。
 
 ## 記事を書く方針
 
