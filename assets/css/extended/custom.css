@@ -139,6 +139,35 @@ h6 code:not(pre code) {
     width: 26px;
 }
 
+/* 7b. 記事の SNS シェアボタン（同じ理由でブロックされやすい
+       .share-buttons → .j1-share-buttons に変更。見た目は PaperMod の
+       .share-buttons と同じにする） */
+.j1-share-buttons {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.j1-share-buttons li,
+.j1-share-buttons a {
+  display: inline-flex;
+}
+
+.j1-share-buttons a:not(:last-of-type) {
+  margin-inline-end: 12px;
+}
+
+@media screen and (max-width: 340px) {
+  .j1-share-buttons {
+    justify-content: unset;
+  }
+}
+
 /* 本文画像はクリックで拡大表示できる。 */
 .post-content a.glightbox {
   display: block;

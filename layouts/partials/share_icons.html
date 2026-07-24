@@ -1,5 +1,11 @@
 {{- /* Site override: theme's share_icons.html plus Bluesky and Hatena Bookmark
-       buttons (theme has neither). Bluesky uses the intent-link format from
+       buttons (theme has neither), and the wrapping <ul> uses a renamed class
+       (.j1-share-buttons instead of the theme's .share-buttons) because
+       ".share-buttons" is a known cosmetic-hiding target in ad/content-blocker
+       filter lists (e.g. EasyList's social-widget rules), which silently
+       removes the buttons on blocker-enabled browsers — most commonly mobile
+       Safari with a content-blocker extension. Matching CSS lives in
+       assets/css/extended/custom.css. Bluesky uses the intent-link format from
        https://docs.bsky.app/docs/advanced-guides/intent-links —
        https://bsky.app/intent/compose?text=<url-escaped text>, single "text"
        param only (no separate url param), so title+url are joined with the
@@ -25,7 +31,7 @@
 {{- $ShareButtons := (.Param "ShareButtons")}}
 {{- with $ShareButtons }}{{ $custom = true }}{{ end }}
 
-<ul class="share-buttons">
+<ul class="j1-share-buttons">
     {{- if (or (cond ($custom) (in $ShareButtons "x") (true)) (cond ($custom) (in $ShareButtons "twitter") (true))) }}
     <li>
         <a target="_blank" rel="noopener noreferrer" title="Xで共有" aria-label="share {{ $title | plainify }} on x"
