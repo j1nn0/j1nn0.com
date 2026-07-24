@@ -49,7 +49,7 @@
 <!-- speech bubble: the one-line instruction -->
 <path d="M 90,120 L 340,120 L 340,185 L 180,185 L 158,215 L 168,185 L 90,185 Z" fill="#101225" stroke="#F5F0E6" stroke-width="4" transform="translate(4,4)"/>
 <path d="M 90,120 L 340,120 L 340,185 L 180,185 L 158,215 L 168,185 L 90,185 Z" fill="#F5F0E6" stroke="#101225" stroke-width="4"/>
-<text x="215" y="147" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle">「ドラクエ風の</text>
+<text x="215" y="147" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle">「某有名JRPG風の</text>
 <text x="215" y="169" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle">ポーカー作って」</text>
 
 <!-- arrow from bubble to terminal -->
