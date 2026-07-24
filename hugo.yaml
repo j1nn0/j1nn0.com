@@ -82,12 +82,13 @@ params:
   twitter: "j1nn0"
   DateFormat: 2006-01-02
 
-  ShowReadingTime: false
+  ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: false
+  ShowFullTextinRSS: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
