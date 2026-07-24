@@ -1,5 +1,5 @@
 ---
-title: "某有名JRPG風ポーカーをAIエージェントに作らせたら、実績システムだけ勝手にADRを書いて作り直していた"
+title: "某有名JRPG風ポーカーをAIエージェントに作らせたら、勝手にADRを書いてアーキテクチャを作り直していた"
 slug: draw-poker-ai-agent
 images:
   - /images/draw-poker-ai-agent/ogp.png
