@@ -11,7 +11,7 @@ tags:
   - ai_agents
   - terminal
   - javascript
-draft: true
+draft: false
 ---
 
 「ターミナルで遊べる某有名JRPG風のドローポーカーを作って」。個人開発でAIエージェントに渡した指示はこれだけだった。
