@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+
+<!-- terminal panel (rotated, the TUI itself) -->
+<g transform="rotate(-3 700 260)">
+  <rect x="430" y="100" width="560" height="330" fill="#1A1F3A" stroke="#F5F0E6" stroke-width="6"/>
+  <rect x="430" y="100" width="560" height="34" fill="#101225"/>
+  <circle cx="454" cy="117" r="6" fill="#C45B3A"/>
+  <circle cx="476" cy="117" r="6" fill="#E8D44D"/>
+  <circle cx="498" cy="117" r="6" fill="#4A90D9"/>
+  <text x="710" y="122" font-family="Menlo, monospace" font-size="13" fill="#6B7B8E" text-anchor="middle">draw-poker</text>
+
+  <!-- five cards -->
+  <g font-family="Menlo, monospace" font-size="30" text-anchor="middle">
+    <rect x="455" y="155" width="80" height="112" rx="6" fill="#F5F0E6" stroke="#101225" stroke-width="3"/>
+    <text x="495" y="200" fill="#101225">A</text>
+    <text x="495" y="236" fill="#101225">♠</text>
+
+    <rect x="545" y="155" width="80" height="112" rx="6" fill="#F5F0E6" stroke="#101225" stroke-width="3"/>
+    <text x="585" y="200" fill="#C45B3A">K</text>
+    <text x="585" y="236" fill="#C45B3A">♥</text>
+
+    <rect x="635" y="155" width="80" height="112" rx="6" fill="#F5F0E6" stroke="#101225" stroke-width="3"/>
+    <text x="675" y="200" fill="#101225">Q</text>
+    <text x="675" y="236" fill="#101225">♣</text>
+
+    <rect x="725" y="155" width="80" height="112" rx="6" fill="#F5F0E6" stroke="#101225" stroke-width="3"/>
+    <text x="765" y="200" fill="#C45B3A">J</text>
+    <text x="765" y="236" fill="#C45B3A">♦</text>
+
+    <rect x="815" y="155" width="80" height="112" rx="6" fill="#E8D44D" stroke="#101225" stroke-width="3"/>
+    <text x="855" y="200" fill="#101225">10</text>
+    <text x="855" y="236" fill="#101225">♠</text>
+  </g>
+
+  <text x="710" y="305" font-family="Menlo, monospace" font-size="15" fill="#E8D44D" text-anchor="middle">ROYAL STRAIGHT FLUSH</text>
+  <text x="710" y="330" font-family="Menlo, monospace" font-size="14" fill="#6B7B8E" text-anchor="middle">コイン: 8100  ／  BET: 10</text>
+
+  <!-- keep/change row -->
+  <g font-family="Hiragino Sans, sans-serif" font-size="13" fill="#6B7B8E" text-anchor="middle">
+    <text x="495" y="405">残す</text>
+    <text x="585" y="405">残す</text>
+    <text x="675" y="405">残す</text>
+    <text x="765" y="405">残す</text>
+    <text x="855" y="405">残す</text>
+  </g>
+</g>
+
+<!-- speech bubble: the one-line instruction -->
+<path d="M 90,120 L 340,120 L 340,185 L 180,185 L 158,215 L 168,185 L 90,185 Z" fill="#101225" stroke="#F5F0E6" stroke-width="4" transform="translate(4,4)"/>
+<path d="M 90,120 L 340,120 L 340,185 L 180,185 L 158,215 L 168,185 L 90,185 Z" fill="#F5F0E6" stroke="#101225" stroke-width="4"/>
+<text x="215" y="147" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle">「ドラクエ風の</text>
+<text x="215" y="169" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#101225" text-anchor="middle">ポーカー作って」</text>
+
+<!-- arrow from bubble to terminal -->
+<line x1="352" y1="152" x2="415" y2="180" stroke="#F5F0E6" stroke-width="4"/>
+<polygon points="405,168 400,192 424,182" fill="#F5F0E6"/>
+
+<!-- ADR badge: the agent's own decision record -->
+<g transform="rotate(4 1010 470)">
+  <rect x="930" y="410" width="160" height="120" fill="#1A1F3A" stroke="#E8D44D" stroke-width="4"/>
+  <text x="1010" y="445" font-family="Menlo, monospace" font-size="16" fill="#E8D44D" text-anchor="middle">ADR 0003</text>
+  <line x1="948" y1="460" x2="1072" y2="460" stroke="#6B7B8E" stroke-width="2"/>
+  <line x1="948" y1="478" x2="1072" y2="478" stroke="#6B7B8E" stroke-width="2"/>
+  <line x1="948" y1="496" x2="1040" y2="496" stroke="#6B7B8E" stroke-width="2"/>
+  <circle cx="1050" cy="500" r="16" fill="#E8D44D"/>
+  <path d="M 1042,500 L 1048,506 L 1060,492" stroke="#101225" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<text x="60" y="500" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">AIエージェントに</text>
+<text x="60" y="545" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">ターミナルのドローポーカーを作らせた話</text>
+<text x="60" y="583" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#6B7B8E" text-anchor="start">実績システムだけ、気づけば勝手にADRを書いていた</text>
+
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>
