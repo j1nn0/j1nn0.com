@@ -9,6 +9,13 @@
        init pairs with the glightbox links added in _default/_markup/render-image.html. */ -}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- end -}}
+<script>
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-share-url]');
+    if (!btn) return;
+    window.open(btn.dataset.shareUrl, '_blank', 'noopener,noreferrer');
+  });
+</script>
 {{- if eq .Section "posts" }}
 <script defer src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
 <script>
