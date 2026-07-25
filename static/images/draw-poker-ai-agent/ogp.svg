@@ -69,7 +69,7 @@
 
 <text x="60" y="500" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">AIエージェントに</text>
 <text x="60" y="545" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">ターミナルのドローポーカーを作らせた話</text>
-<text x="60" y="583" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#6B7B8E" text-anchor="start">実績を頼んだら、気づけば勝手にADRを書いていた</text>
+<text x="60" y="583" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#6B7B8E" text-anchor="start">実績追加をきっかけに、ADRが生まれていた</text>
 
 <text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
 </svg>
