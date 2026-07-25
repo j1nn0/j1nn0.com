@@ -157,6 +157,7 @@ h6 code:not(pre code) {
 .j1-share-buttons a,
 .j1-share-buttons button {
   display: inline-flex;
+  color: inherit;
 }
 
 .j1-share-buttons a:not(:last-of-type),
@@ -171,7 +172,6 @@ h6 code:not(pre code) {
   background: none;
   border: none;
   padding: 0;
-  color: inherit;
   font: inherit;
   cursor: pointer;
 }
