@@ -154,12 +154,26 @@ h6 code:not(pre code) {
 }
 
 .j1-share-buttons li,
-.j1-share-buttons a {
+.j1-share-buttons a,
+.j1-share-buttons button {
   display: inline-flex;
 }
 
-.j1-share-buttons a:not(:last-of-type) {
+.j1-share-buttons a:not(:last-of-type),
+.j1-share-buttons button:not(:last-of-type) {
   margin-inline-end: 12px;
+}
+
+/* X/Facebook/Hatena render as <button data-share-url> (see share_icons.html)
+   so their href never carries the flagged domain; reset button chrome to
+   match the plain <a> icons next to them. */
+.j1-share-buttons button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 340px) {

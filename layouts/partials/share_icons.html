@@ -5,7 +5,18 @@
        filter lists (e.g. EasyList's social-widget rules), which silently
        removes the buttons on blocker-enabled browsers — most commonly mobile
        Safari with a content-blocker extension. Matching CSS lives in
-       assets/css/extended/custom.css. Bluesky uses the intent-link format from
+       assets/css/extended/custom.css.
+
+       X/Twitter, Facebook, and Hatena additionally get hidden even with the
+       renamed class, because their most robust cosmetic rules key off the
+       *destination domain* in href (e.g. `a[href*="facebook.com/sharer"]`),
+       which is class-name-agnostic. Those three are rendered as
+       <button data-share-url="..."> instead of <a href="...">, so the
+       flagged domain never appears in an href attribute; extend_footer.html
+       has a small delegated click handler that opens data-share-url in a new
+       tab. The other icons keep plain <a href> since they aren't targeted.
+
+       Bluesky uses the intent-link format from
        https://docs.bsky.app/docs/advanced-guides/intent-links —
        https://bsky.app/intent/compose?text=<url-escaped text>, single "text"
        param only (no separate url param), so title+url are joined with the
@@ -34,13 +45,13 @@
 <ul class="j1-share-buttons">
     {{- if (or (cond ($custom) (in $ShareButtons "x") (true)) (cond ($custom) (in $ShareButtons "twitter") (true))) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" title="Xで共有" aria-label="share {{ $title | plainify }} on x"
-            href="https://x.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "tags" -}}">
+        <button type="button" title="Xで共有" aria-label="share {{ $title | plainify }} on x"
+            data-share-url="https://x.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}&amp;hashtags={{- $.Scratch.Get "tags" -}}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
             </svg>
-        </a>
+        </button>
     </li>
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "bluesky") (true)) }}
@@ -82,13 +93,13 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" title="Facebookで共有" aria-label="share {{ $title | plainify }} on facebook"
-            href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
+        <button type="button" title="Facebookで共有" aria-label="share {{ $title | plainify }} on facebook"
+            data-share-url="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
             </svg>
-        </a>
+        </button>
     </li>
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "whatsapp") (true)) }}
@@ -127,8 +138,8 @@
     {{- end }}
     {{- if (cond ($custom) (in $ShareButtons "hatena") (true)) }}
     <li>
-        <a target="_blank" rel="noopener noreferrer" title="はてなブックマークに追加" aria-label="share {{ $title | plainify }} on hatena"
-            href="https://b.hatena.ne.jp/entry/panel/?url={{ $pageurl }}&amp;btitle={{ $title }}">
+        <button type="button" title="はてなブックマークに追加" aria-label="share {{ $title | plainify }} on hatena"
+            data-share-url="https://b.hatena.ne.jp/entry/panel/?url={{ $pageurl }}&amp;btitle={{ $title }}">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px">
                 <path fill="currentColor"
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -136,7 +147,7 @@
                     font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="230"
                     fill="var(--code-bg)">B!</text>
             </svg>
-        </a>
+        </button>
     </li>
     {{- end }}
 </ul>
