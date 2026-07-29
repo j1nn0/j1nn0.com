@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+<!-- before: banned-word list, crossed out -->
+<rect x="120" y="120" width="300" height="220" fill="#1A1F3A" stroke="#C45B3A" stroke-width="6" transform="rotate(-3 270 230)" />
+<g transform="rotate(-3 270 230)">
+  <text x="270" y="160" font-family="Menlo, monospace" font-size="16" fill="#C45B3A" text-anchor="middle">禁止語リスト</text>
+  <text x="150" y="195" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#8A93A6" text-anchor="start">・浮き彫りにしており</text>
+  <text x="150" y="222" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#8A93A6" text-anchor="start">・注目に値する</text>
+  <text x="150" y="249" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#8A93A6" text-anchor="start">・核心的、画期的</text>
+  <text x="150" y="276" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#8A93A6" text-anchor="start">・多角的、包括的</text>
+  <line x1="140" y1="150" x2="400" y2="330" stroke="#C45B3A" stroke-width="6" />
+</g>
+<!-- arrow -->
+<line x1="450" y1="230" x2="540" y2="230" stroke="#F5F0E6" stroke-width="5" />
+<polygon points="530,220 530,240 548,230" fill="#F5F0E6" />
+<!-- after: fact / inference / judgment -->
+<rect x="580" y="130" width="220" height="60" fill="#101225" stroke="#4A90D9" stroke-width="5" />
+<text x="690" y="167" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#4A90D9" text-anchor="middle">事実</text>
+<rect x="580" y="205" width="220" height="60" fill="#101225" stroke="#E8D44D" stroke-width="5" />
+<text x="690" y="242" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#E8D44D" text-anchor="middle">推測</text>
+<rect x="580" y="280" width="220" height="60" fill="#101225" stroke="#C45B3A" stroke-width="5" />
+<text x="690" y="317" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#C45B3A" text-anchor="middle">判断</text>
+<!-- writing-ja label -->
+<rect x="840" y="160" width="260" height="180" fill="#1A1F3A" stroke="#F5F0E6" stroke-width="5" transform="rotate(2 970 250)" />
+<g transform="rotate(2 970 250)">
+  <text x="970" y="225" font-family="Menlo, monospace" font-size="22" fill="#F5F0E6" text-anchor="middle">writing-ja</text>
+  <text x="970" y="255" font-family="Menlo, monospace" font-size="13" fill="#6B7B8E" text-anchor="middle">SKILL.md</text>
+  <text x="970" y="278" font-family="Menlo, monospace" font-size="13" fill="#6B7B8E" text-anchor="middle">SOURCES.md</text>
+  <text x="970" y="301" font-family="Menlo, monospace" font-size="13" fill="#6B7B8E" text-anchor="middle">check_style.py</text>
+</g>
+<text x="60" y="500" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">禁止語リストをやめて</text>
+<text x="60" y="545" font-family="Hiragino Sans, sans-serif" font-size="34" fill="#F5F0E6" text-anchor="start">事実・推測・判断を分けるスキルに書き直した</text>
+<text x="60" y="580" font-family="Hiragino Sans, sans-serif" font-size="20" fill="#6B7B8E" text-anchor="start">writing-ja というAgent Skillの設計判断</text>
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>

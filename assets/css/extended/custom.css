@@ -198,6 +198,15 @@ h6 code:not(pre code) {
   outline-offset: var(--space-2xs);
 }
 
+/* figure ショートコードでリンク画像を包んだとき、img の display:block が
+   親の a を無名ブロック化して幅いっぱいに広げ、画像の外側まで
+   クリック領域になってしまうのを防ぐ。 */
+.post-content figure > a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
 /* MermaidのSVGはライトテーマの文字色を直接出力するため、ダークモードではテーマの文字色に合わせる。 */
 [data-theme="dark"] .mermaid svg text {
   fill: var(--primary) !important;
