@@ -11,13 +11,19 @@
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-ops/SKILL.md",
-      "computedHash": "ff02b268bdc665f36b726b0fddacfd99cfc26d85b7e5696953c129c1e05a382c"
+      "computedHash": "52e3f29449cf524b05102cffbaa175d233ee1f018e2e1c381631b0c21d5aa99f"
     },
     "blog-writing-guide-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-writing-guide-ja/SKILL.md",
-      "computedHash": "36086213110f7a30df89924bde01ec769a0e22de2b9d9be6308d49a08ec7e6d9"
+      "computedHash": "dc2ef631cfbcba149a08d1d708c3670e36b6fd4ff235f1f64b7ce840b6be6fe9"
+    },
+    "fact-check-ja": {
+      "source": "j1nn0/skills",
+      "sourceType": "github",
+      "skillPath": "skills/fact-check-ja/SKILL.md",
+      "computedHash": "58ab53e6ae64ace9d2fac6734f89ab204ba924660770a2003c4f35afa7ff07ec"
     },
     "grill-me": {
       "source": "mattpocock/skills",
@@ -35,13 +41,13 @@
       "source": "nutlope/hallmark",
       "sourceType": "github",
       "skillPath": "skills/hallmark/SKILL.md",
-      "computedHash": "8a8ecafd613f09e701330b5aa4a591ac539abb2605596df4a2394f03628d1d76"
+      "computedHash": "4866949139ac28036e8ef30edb879cb7b76d2623d88a019ec73df5d781bb6927"
     },
     "writing-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/writing-ja/SKILL.md",
-      "computedHash": "ea2dd23b366d2b0c8afa556cd657c0e6121348937e33f494a25b82610841bc0d"
+      "computedHash": "f89a93c53dec93d0bda5ba86f135c7aa98b0bc4b38b1db1f15946d88d46e599d"
     }
   }
 }
