@@ -90,7 +90,7 @@ flowchart LR
 
 セキュリティパッケージは、オーケストレーションの題材として良かった。不変条件が存在理由で、不変条件を静かに弱める変更は diff の上では正しく見える。AGENTS.md にそう書いてある。実装者から独立したレビューが、この「正しく見える変更」を拾う役割を担う。
 
-開発は2日間で19コミット進んだ。うち13コミットに「Co-Authored-By: Claude Opus 5」が付いている。リポジトリには、役割分担の痕跡がそのまま残っている。AGENTS.md の「一度に一人の書き手」という規約、検証ゲート、調査用スキルの配置だ。
+開発は2日間で41コミット進んだ。うち34コミットに「Co-Authored-By: Claude Opus 5」が付いている。リポジトリには、役割分担の痕跡がそのまま残っている。AGENTS.md の「一度に一人の書き手」という規約、検証ゲート、調査用スキルの配置だ。
 
 ### 検証ゲートは3つとも通らないと完了としない
 
@@ -116,6 +116,12 @@ AGENTS.md は検証ゲートを定めている。`composer test`(PHPUnit)、`com
 
 この往復は、レビューを独立させたことの成果だと思う。実装者が自分で「ここは冗長に見えるけど必要」と書いても、レビューと実装が同じ頭なら、指摘の重みが変わらない。別の視点のレビューが指摘し、実装側が根拠を示して ADR にした。両方が diff に残っている。
 
+この判断は、最初の Packagist リリースまでに覆された。
+
+2023年4月以降に作られた S3 バケットは、Object Ownership が Bucket owner enforced に既定され、ACL が無効になる。ACL 付きの PutObject はそのようなバケットで HTTP 400 AccessControlListNotSupported になる。S3 は既定で private なので、ACL を省いても公開にはならない。
+
+デフォルト ACL の注入は breaking change として取り除かれ、ADR 0002 は ADR 0004 に置き換えられた。同じ日に「必要」と結論した判断を、最初のリリースまでに覆した。判断を ADR に残していたから、覆すときも根拠が追える。
+
 ### セキュリティ不変条件は、緩めるときは人間に聞く
 
 このパッケージには、緩めてはいけない不変条件がいくつもある。
@@ -136,9 +142,9 @@ AGENTS.md は、タスクが不変条件を緩める形になったら止めて�
 
 レイアウトの推奨も、ChatGPT との議論を経て加わった(前述)。開発初日の23時台に、スキル導入、レイアウト追加、kind-only 書き直しが続いた。
 
-リポジトリでは、このスキルは `.claude/skills` にだけ置かれている。調査用のスキル(laravel-patterns、laravel-verification、securing-s3-buckets など)は `.agents/skills` と `.claude/skills` の両方にある。オーケストレーターは Claude Code だけだから、オーケストレーションのスキルは Claude Code のディレクトリにしかない。
+開発中、このスキルは `.claude/skills` にだけ置かれていた。オーケストレーターは Claude Code だけだから、オーケストレーションのスキルは Claude Code のディレクトリにしかなかった。調査用のスキル(laravel-patterns、laravel-verification、securing-s3-buckets など)は `.agents/skills` と `.claude/skills` の両方に置かれていた。
 
-役割の固定が、リポジトリの構成にも現れた。
+リリース準備の再編成で、この構成は変わった。5つのスキルすべてが `.agents/skills` に集約され、`.claude/skills` はそこへのシンボリックリンクになった。skills コマンドの lock ファイル(skills-lock.json)で管理され、agent-orchestration は `j1nn0/skills` から取得される。実体は1つで、両方のエージェントのディレクトリから参照する形に整理された。
 
 スキルは2026年8月11日に `j1nn0/skills` へ公開した。公開版と `.claude/skills` の版は一致している。
 
@@ -166,6 +172,8 @@ npx skills@latest add j1nn0/skills -s agent-orchestration
 
 使うには herdr のセッション(`HERDR_ENV=1`)と、herdr スキルが必要だ。Herdr の外では、このスキルは単一エージェントの作業にフォールバックする。
 
-`laravel-encrypted-s3` も公開している。今も改善中だ。CSE V3 を Laravel で使いたい人は、README のサポート行列と制約の節を読んでから試してほしい。
+`laravel-encrypted-s3` は Packagist に公開し、v1.0.0-RC1 まで出ている。リリース準備も ChatGPT と進めた。公開 API の範囲を決め、暗号化設定の未知キーを構築時に拒否し、「encryption_contxet」のような typo が空の暗号化コンテキストとして黙って動く失敗モードを塞いだ。Moto を使った統合テストも CI に入れた。
+
+次の一歩は、Packagist の RC1 を実際にインストールした Laravel アプリからの実 AWS smoke test だ。
 
 3エージェント構成を試すなら、最初に「何を委譲しないか」を決めることから始めるといい。自分は判断とレビューを Claude Code に残した。この線がどこにあるかで、スキルの形は変わる。
