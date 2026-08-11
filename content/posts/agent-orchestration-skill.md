@@ -126,6 +126,6 @@ npx skills@latest add j1nn0/skills -s agent-orchestration
 
 使うには herdr のセッション(`HERDR_ENV=1`)と、herdr スキルが必要だ。Herdr の外では、このスキルは単一エージェントの作業にフォールバックする。
 
-[`laravel-encrypted-s3`](https://github.com/j1nn0/laravel-encrypted-s3) は Packagist に公開し、v1.0.0-RC1 まで出ている。リリース準備も ChatGPT と進めた。
+[`laravel-encrypted-s3`](https://github.com/j1nn0/laravel-encrypted-s3) は Packagist に公開し、v1.0.0-RC1 まで出ている。
 
 3エージェント構成を試すなら、最初に「何を委譲しないか」を決めることから始めるといい。自分は判断とレビューを Claude Code に残した。この線がどこにあるかで、スキルの形は変わる。
