@@ -80,7 +80,7 @@ OMP は仮説を提示する。仮説は、もっともらしく見えて間違�
 
 ## 実プロジェクトで試した: laravel-encrypted-s3
 
-できあがったスキルで作ったのが `laravel-encrypted-s3` だ。AWS S3 のクライアント側暗号化(CSE V3)を Laravel のファイルシステムドライバとして提供する Composer パッケージで、暗号化の実装は AWS SDK に委譲する。パッケージの中身の話は、また別の記事で書く。
+できあがったスキルで作ったのが [`laravel-encrypted-s3`](https://github.com/j1nn0/laravel-encrypted-s3) だ。AWS S3 のクライアント側暗号化(CSE V3)を Laravel のファイルシステムドライバとして提供する Composer パッケージで、暗号化の実装は AWS SDK に委譲する。パッケージの中身の話は、また別の記事で書く。
 
 セキュリティパッケージは、オーケストレーションの題材として良かった。不変条件が存在理由で、不変条件を静かに弱める変更は diff の上では正しく見える。AGENTS.md にそう書いてある。実装者から独立したレビューが、この「正しく見える変更」を拾う役割を担う。
 
@@ -126,6 +126,6 @@ npx skills@latest add j1nn0/skills -s agent-orchestration
 
 使うには herdr のセッション(`HERDR_ENV=1`)と、herdr スキルが必要だ。Herdr の外では、このスキルは単一エージェントの作業にフォールバックする。
 
-`laravel-encrypted-s3` は Packagist に公開し、v1.0.0-RC1 まで出ている。リリース準備も ChatGPT と進めた。
+[`laravel-encrypted-s3`](https://github.com/j1nn0/laravel-encrypted-s3) は Packagist に公開し、v1.0.0-RC1 まで出ている。リリース準備も ChatGPT と進めた。
 
 3エージェント構成を試すなら、最初に「何を委譲しないか」を決めることから始めるといい。自分は判断とレビューを Claude Code に残した。この線がどこにあるかで、スキルの形は変わる。
