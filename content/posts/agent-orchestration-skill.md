@@ -100,7 +100,7 @@ OMP は仮説を提示する。仮説は、もっともらしく見えて間違�
 
 レイアウトの推奨も、ChatGPT との議論を経て加わった(前述)。開発初日の23時台に、スキル導入、レイアウト追加、kind-only 書き直しが続いた。
 
-スキルは2026年8月11日に `j1nn0/skills` へ公開した。
+スキルは2026年8月11日に [`j1nn0/skills`](https://github.com/j1nn0/skills) へ公開した。
 
 ## うまくいかなかったことと、残る制約
 
@@ -118,7 +118,7 @@ OMP は仮説を提示する。仮説は、もっともらしく見えて間違�
 
 ## 公開したスキルと、次の一歩
 
-スキルは `j1nn0/skills` に公開している。
+スキルは [`j1nn0/skills`](https://github.com/j1nn0/skills) に公開している。
 
 ```sh
 npx skills@latest add j1nn0/skills -s agent-orchestration
