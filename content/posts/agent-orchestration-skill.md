@@ -32,6 +32,10 @@ draft: true
 
 調査は探索的な試行を何度も繰り返す。安価な deepseek-v4-flash を当てれば、試行のコストが下がる。実装は一発の品質が問われる。gpt-5.6-luna を当てて、実装の手戻りを減らす。この割り当ては、設計レビューでも「低コストモデルを探索に、高性能モデルを実装に割るのは妥当」と評価された。
 
+この3モデルへの固定は、以前のオーケストレーションからの移行でもある。それまでは OpenCode で oh-my-opencode-slim を使い、Orchestrator や Explorer といったロールにモデルを割り当てていた([前回の記事]({{< ref "oh-my-opencode-slim-review" >}}))。
+
+Claude Code で Opus 5 を使う機会が増え、Codex の gpt-5.6-luna(max)と deepseek-v4-flash がどちらも高コスパで使い勝手が良く、ほかのオープン系モデルを使わなくなった。今は OpenCode 自体は使っていない。OpenCode Go のモデルが必要なときだけ OMP を経由する。
+
 モデルはスキルが決めるのではなく、各 CLI の設定が決める。OMP は `~/.omp/agent/config.yml`、Codex は `~/.codex/config.toml` だ。スキルはエージェントを kind(omp / codex)だけで起動し、`--model` や thinking レベルのオーバーライドを渡さない。
 
 オーバーライドを渡すと、実際に使われるモデルがユーザーの設定と食い違う。実際、最初の版はモデル指定をスキルに書いていた。あとで廃止した(後述)。
