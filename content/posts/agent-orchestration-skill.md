@@ -11,7 +11,7 @@ images:
   - /images/agent-orchestration-skill/ogp.png
 cover:
   image: images/agent-orchestration-skill/ogp.png
-draft: true
+draft: false
 ---
 
 マルチエージェント開発で最初に迷うのは、何をどのエージェントに委ねるかだ。
