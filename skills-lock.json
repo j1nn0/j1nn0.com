@@ -25,18 +25,6 @@
       "skillPath": "skills/fact-check-ja/SKILL.md",
       "computedHash": "58ab53e6ae64ace9d2fac6734f89ab204ba924660770a2003c4f35afa7ff07ec"
     },
-    "grill-me": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "skillPath": "skills/productivity/grill-me/SKILL.md",
-      "computedHash": "f361db4e15e6bfd562a9282b1dccda513910a50061f9e838ce017be9c69dde3f"
-    },
-    "grilling": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "skillPath": "skills/productivity/grilling/SKILL.md",
-      "computedHash": "4ebdd12fe61ff3abf20cff6683740e2b9b3739454be0a3f4a928a1c4d07d6b34"
-    },
     "hallmark": {
       "source": "nutlope/hallmark",
       "sourceType": "github",
