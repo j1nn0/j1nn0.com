@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+<g transform="rotate(6 600 300)">
+<rect x="300" y="90" width="600" height="400" fill="#E8D44D" stroke="#F5F0E6" stroke-width="8"/>
+<text x="335" y="132" font-family="Menlo, monospace" font-size="18" fill="#101225">laravel-encrypted-s3</text>
+
+<!-- App: left -->
+<rect x="330" y="160" width="250" height="230" fill="#101225"/>
+<rect x="322" y="152" width="250" height="230" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="452" y="200" font-family="Hiragino Sans, sans-serif" font-size="18" fill="#F5F0E6" text-anchor="middle">Laravel アプリ</text>
+<text x="452" y="240" font-family="Menlo, monospace" font-size="15" fill="#E8D44D" text-anchor="middle">AES-256-GCM</text>
+<text x="452" y="268" font-family="Menlo, monospace" font-size="15" fill="#F5F0E6" text-anchor="middle">KMS GenerateDataKey</text>
+<text x="452" y="296" font-family="Menlo, monospace" font-size="15" fill="#F5F0E6" text-anchor="middle">Decrypt</text>
+<text x="452" y="340" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">平文をここで暗号化</text>
+
+<!-- S3: right -->
+<rect x="650" y="160" width="230" height="230" fill="#101225"/>
+<rect x="642" y="152" width="230" height="230" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="757" y="200" font-family="Menlo, monospace" font-size="22" fill="#E8D44D" text-anchor="middle">S3</text>
+<text x="757" y="240" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#F5F0E6" text-anchor="middle">暗号文のみ</text>
+<text x="757" y="268" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#F5F0E6" text-anchor="middle">エンベロープ</text>
+<text x="757" y="296" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">(メタデータ)</text>
+<text x="757" y="340" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">平文は置かない</text>
+
+<!-- arrow App -> S3 -->
+<line x1="580" y1="270" x2="640" y2="270" stroke="#101225" stroke-width="6"/>
+<polygon points="646,270 632,262 632,278" fill="#101225"/>
+<text x="610" y="256" font-family="Menlo, monospace" font-size="15" fill="#101225" text-anchor="middle">put</text>
+
+<text x="600" y="452" font-family="Menlo, monospace" font-size="17" fill="#101225" text-anchor="middle">CSE V3 / KMS</text>
+</g>
+<text x="60" y="540" font-family="Hiragino Sans, sans-serif" font-size="40" fill="#F5F0E6" font-weight="bold">Laravel の S3 をクライアント側暗号化する</text>
+<text x="60" y="580" font-family="Hiragino Sans, sans-serif" font-size="40" fill="#F5F0E6" font-weight="bold">暗号化を確実に守る設計判断</text>
+<text x="60" y="616" font-family="Hiragino Sans, sans-serif" font-size="24" fill="#6B7B8E">S3 には暗号文しか置かない。そのためのドライバ</text>
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>
