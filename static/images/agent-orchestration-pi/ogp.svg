@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+<g transform="rotate(6 600 300)">
+<rect x="300" y="90" width="600" height="400" fill="#E8D44D" stroke="#F5F0E6" stroke-width="8"/>
+<text x="335" y="132" font-family="Menlo, monospace" font-size="18" fill="#101225">agent-orchestration</text>
+
+<!-- Claude Code: left, dominant -->
+<rect x="330" y="160" width="280" height="230" fill="#101225"/>
+<rect x="322" y="152" width="280" height="230" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="462" y="212" font-family="Menlo, monospace" font-size="22" fill="#F5F0E6" text-anchor="middle">Current agent</text>
+<text x="462" y="252" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#F5F0E6" text-anchor="middle">判断・レビュー</text>
+<text x="462" y="276" font-family="Hiragino Sans, sans-serif" font-size="16" fill="#F5F0E6" text-anchor="middle">完了の判断</text>
+
+<!-- pi explorer: upper right (replaces OMP) -->
+<rect x="658" y="160" width="230" height="105" fill="#101225"/>
+<rect x="650" y="152" width="230" height="105" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="765" y="177" font-family="Menlo, monospace" font-size="14" fill="#6B7B8E" text-anchor="middle">OMP</text>
+<line x1="752" y1="173" x2="778" y2="173" stroke="#6B7B8E" stroke-width="2"/>
+<text x="765" y="198" font-family="Menlo, monospace" font-size="24" fill="#E8D44D" text-anchor="middle">pi explorer</text>
+<text x="765" y="236" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#F5F0E6" text-anchor="middle">調査(読み取り専用)</text>
+
+<!-- pi fixer: lower right (replaces Codex) -->
+<rect x="658" y="285" width="230" height="105" fill="#101225"/>
+<rect x="650" y="277" width="230" height="105" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="765" y="302" font-family="Menlo, monospace" font-size="14" fill="#6B7B8E" text-anchor="middle">Codex</text>
+<line x1="744" y1="298" x2="786" y2="298" stroke="#6B7B8E" stroke-width="2"/>
+<text x="765" y="323" font-family="Menlo, monospace" font-size="24" fill="#E8D44D" text-anchor="middle">pi fixer</text>
+<text x="765" y="361" font-family="Hiragino Sans, sans-serif" font-size="15" fill="#F5F0E6" text-anchor="middle">実装</text>
+
+<!-- arrows Claude -> pi explorer / pi fixer -->
+<line x1="610" y1="205" x2="650" y2="205" stroke="#101225" stroke-width="6"/>
+<polygon points="654,205 642,198 642,212" fill="#101225"/>
+<text x="630" y="192" font-family="Menlo, monospace" font-size="16" fill="#101225" text-anchor="middle">調査</text>
+
+<line x1="610" y1="322" x2="650" y2="322" stroke="#101225" stroke-width="6"/>
+<polygon points="654,322 642,315 642,329" fill="#101225"/>
+<text x="630" y="309" font-family="Menlo, monospace" font-size="16" fill="#101225" text-anchor="middle">実装</text>
+
+<text x="600" y="452" font-family="Menlo, monospace" font-size="17" fill="#101225" text-anchor="middle">deepseek-v4-flash / gpt-5.6-luna</text>
+</g>
+<text x="60" y="540" font-family="Hiragino Sans, sans-serif" font-size="40" fill="#F5F0E6" font-weight="bold">委譲先は CLI でなく役割で固定する</text>
+<text x="60" y="580" font-family="Hiragino Sans, sans-serif" font-size="40" fill="#F5F0E6" font-weight="bold">OMP と Codex を pi に置き換えた</text>
+<text x="60" y="616" font-family="Hiragino Sans, sans-serif" font-size="24" fill="#6B7B8E">動作確認で見つかった3つの問題と対処</text>
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>

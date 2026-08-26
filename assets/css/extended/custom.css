@@ -193,6 +193,12 @@ h6 code:not(pre code) {
   cursor: zoom-in;
 }
 
+/* render-image が CLS 対策で付与する width/height 属性と max-width の組み合わせだと、
+   本文幅より広い画像は幅だけ縮んで縦に伸びる。height を auto にして比率を保つ。 */
+.post-content img {
+  height: auto;
+}
+
 .post-content a.glightbox:focus-visible {
   outline: var(--rule-bold) solid var(--primary);
   outline-offset: var(--space-2xs);

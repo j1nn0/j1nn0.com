@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+
+<!-- title -->
+<text x="60" y="140" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="42" font-weight="bold" fill="#F5F0E6">オーケストレーターは固定しない。</text>
+<text x="60" y="208" font-family="Menlo, Noto Sans Mono, monospace" font-size="36" fill="#E8D44D">Opus 5 → GPT-5.6 Terra → Opus 5</text>
+
+<!-- summary -->
+<text x="60" y="325" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="24" fill="#6B7B8E">放置していた vue-modal-dialog を 1日で v1.0.0 にした</text>
+<text x="60" y="363" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="24" fill="#6B7B8E">rc 11連発。型問題で Terra が詰まったら Opus 5 に戻した</text>
+
+<!-- phase 1: Opus 5 -->
+<rect x="860" y="235" width="270" height="88" fill="#101225" stroke="#F5F0E6" stroke-width="4"/>
+<text x="995" y="270" font-family="Menlo, Noto Sans Mono, monospace" font-size="26" fill="#F5F0E6" text-anchor="middle">Opus 5</text>
+<text x="995" y="302" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">前半・方針</text>
+
+<!-- arrow 1 -->
+<line x1="995" y1="323" x2="995" y2="348" stroke="#6B7B8E" stroke-width="4"/>
+<polygon points="995,355 988,344 1002,344" fill="#6B7B8E"/>
+
+<!-- phase 2: GPT-5.6 Terra (highlight) -->
+<rect x="860" y="358" width="270" height="88" fill="#101225" stroke="#E8D44D" stroke-width="4"/>
+<text x="995" y="393" font-family="Menlo, Noto Sans Mono, monospace" font-size="22" fill="#E8D44D" text-anchor="middle">GPT-5.6 Terra</text>
+<text x="995" y="425" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">中盤・反復</text>
+
+<!-- arrow 2 -->
+<line x1="995" y1="446" x2="995" y2="471" stroke="#6B7B8E" stroke-width="4"/>
+<polygon points="995,478 988,467 1002,467" fill="#6B7B8E"/>
+
+<!-- phase 3: Opus 5 -->
+<rect x="860" y="481" width="270" height="88" fill="#101225" stroke="#F5F0E6" stroke-width="4"/>
+<text x="995" y="516" font-family="Menlo, Noto Sans Mono, monospace" font-size="26" fill="#F5F0E6" text-anchor="middle">Opus 5</text>
+<text x="995" y="548" font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif" font-size="15" fill="#6B7B8E" text-anchor="middle">後半・型問題</text>
+
+<text x="1140" y="45" font-family="Menlo, Noto Sans Mono, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>
