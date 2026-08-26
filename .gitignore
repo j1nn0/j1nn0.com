@@ -21,3 +21,4 @@ hugo.linux
 .wrangler/
 
 .tmp/
+**/__pycache__/**
