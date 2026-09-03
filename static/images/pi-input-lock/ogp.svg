@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+
+<!-- yellow card -->
+<g transform="rotate(6 600 300)">
+<rect x="300" y="90" width="600" height="400" fill="#E8D44D" stroke="#F5F0E6" stroke-width="8"/>
+
+<!-- header -->
+<text x="335" y="132" font-family="Menlo, monospace" font-size="20" fill="#101225">pi-input-lock</text>
+<text x="860" y="132" font-family="Menlo, monospace" font-size="16" fill="#101225" text-anchor="end">v0.1.4</text>
+
+<!-- IDLE chip -->
+<rect x="330" y="180" width="112" height="88" fill="#101225"/>
+<rect x="322" y="172" width="112" height="88" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="386" y="214" font-family="Menlo, monospace" font-size="24" fill="#E8D44D" text-anchor="middle">IDLE</text>
+<text x="386" y="244" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#F5F0E6" text-anchor="middle">入力可能</text>
+
+<!-- WATCH chip: highlighted -->
+<rect x="552" y="180" width="112" height="88" fill="#101225"/>
+<rect x="544" y="172" width="112" height="88" fill="#101225" stroke="#F5F0E6" stroke-width="7"/>
+<text x="608" y="214" font-family="Menlo, monospace" font-size="24" fill="#E8D44D" text-anchor="middle">WATCH</text>
+<text x="608" y="244" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#F5F0E6" text-anchor="middle">ロック中</text>
+
+<!-- OVERRIDE chip -->
+<rect x="774" y="180" width="112" height="88" fill="#101225"/>
+<rect x="766" y="172" width="112" height="88" fill="#101225" stroke="#F5F0E6" stroke-width="5"/>
+<text x="830" y="213" font-family="Menlo, monospace" font-size="19" fill="#E8D44D" text-anchor="middle">OVERRIDE</text>
+<text x="830" y="243" font-family="Hiragino Sans, sans-serif" font-size="14" fill="#F5F0E6" text-anchor="middle">一時解除</text>
+
+<!-- arrow 1: IDLE -> WATCH -->
+<line x1="446" y1="218" x2="548" y2="218" stroke="#101225" stroke-width="5"/>
+<polygon points="552,218 541,211 541,225" fill="#101225"/>
+<text x="497" y="204" font-family="Menlo, monospace" font-size="12" fill="#101225" text-anchor="middle">agent_start</text>
+
+<!-- arrow 2: WATCH -> OVERRIDE -->
+<line x1="668" y1="218" x2="770" y2="218" stroke="#101225" stroke-width="5"/>
+<polygon points="774,218 763,211 763,225" fill="#101225"/>
+<text x="719" y="204" font-family="Menlo, monospace" font-size="12" fill="#101225" text-anchor="middle">toggle</text>
+
+<!-- status line shown while locked -->
+<rect x="380" y="300" width="440" height="52" fill="#101225" stroke="#F5F0E6" stroke-width="3"/>
+<text x="600" y="334" font-family="Menlo, monospace" font-size="19" fill="#F5F0E6" text-anchor="middle">WATCH · Ctrl + Alt + I to interact</text>
+
+<!-- lifecycle caption -->
+<text x="600" y="412" font-family="Hiragino Sans, sans-serif" font-size="17" fill="#101225" text-anchor="middle">agent_start で自動ロック、agent_settled で解除</text>
+</g>
+
+<!-- bottom title -->
+<text x="60" y="540" font-family="Hiragino Sans, sans-serif" font-size="40" font-weight="bold" fill="#F5F0E6">誤操作でエージェントを止めていた</text>
+<text x="60" y="580" font-family="Hiragino Sans, sans-serif" font-size="40" font-weight="bold" fill="#F5F0E6">実行中だけ入力をロックする</text>
+<text x="60" y="616" font-family="Hiragino Sans, sans-serif" font-size="24" fill="#6B7B8E">pi-reader のフォークから作った Pi 拡張</text>
+
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>
