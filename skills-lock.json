@@ -29,19 +29,25 @@
       "source": "nutlope/hallmark",
       "sourceType": "github",
       "skillPath": "skills/hallmark/SKILL.md",
-      "computedHash": "4866949139ac28036e8ef30edb879cb7b76d2623d88a019ec73df5d781bb6927"
+      "computedHash": "579f86b27cdd7eb972107f7aecedd537f472891c5fd7c7c821bea15f64e0fe86"
     },
     "natural-japanese": {
       "source": "coji/natural-japanese",
       "sourceType": "github",
       "skillPath": "skills/natural-japanese/SKILL.md",
-      "computedHash": "043db25ceb40d2bb1eec4e6c18605f02e2e6938773fb91cbce8381e5c1f447c5"
+      "computedHash": "2cbc03e78e7533e2baa502b37b58db5dae91dcdb3fa991e02f57d3c6c6805964"
     },
     "writing-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/writing-ja/SKILL.md",
       "computedHash": "d37051d212eab8e2b7438ccd220ebf7275ff1cbd5f604cf8e461c78c5a4766a8"
+    },
+    "yomiyasu": {
+      "source": "nanaism/yomiyasu",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "c13f52c0943b5fc780ab262414a112990bd591e571d99fab8c3caae3d1660465"
     }
   }
 }
