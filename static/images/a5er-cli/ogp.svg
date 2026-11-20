@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#101225"/>
+<!-- left: .a5er file card with two entities and a relation -->
+<g transform="rotate(-3 300 230)">
+<rect x="120" y="120" width="320" height="230" fill="#1A1F3A" stroke="#F5F0E6" stroke-width="5"/>
+<text x="280" y="160" font-family="Menlo, monospace" font-size="16" fill="#F5F0E6" text-anchor="middle">diagram.a5er</text>
+<rect x="150" y="185" width="100" height="85" fill="none" stroke="#6B7B8E" stroke-width="3"/>
+<rect x="150" y="185" width="100" height="20" fill="#6B7B8E"/>
+<line x1="158" y1="218" x2="242" y2="218" stroke="#6B7B8E" stroke-width="3"/>
+<line x1="158" y1="232" x2="242" y2="232" stroke="#6B7B8E" stroke-width="3"/>
+<line x1="158" y1="246" x2="242" y2="246" stroke="#6B7B8E" stroke-width="3"/>
+<rect x="300" y="215" width="100" height="85" fill="none" stroke="#6B7B8E" stroke-width="3"/>
+<rect x="300" y="215" width="100" height="20" fill="#6B7B8E"/>
+<line x1="308" y1="248" x2="392" y2="248" stroke="#6B7B8E" stroke-width="3"/>
+<line x1="308" y1="262" x2="392" y2="262" stroke="#6B7B8E" stroke-width="3"/>
+<line x1="308" y1="276" x2="392" y2="276" stroke="#6B7B8E" stroke-width="3"/>
+<line x1="250" y1="227" x2="300" y2="257" stroke="#F5F0E6" stroke-width="3"/>
+<circle cx="300" cy="257" r="5" fill="#F5F0E6"/>
+</g>
+<!-- arrow -->
+<line x1="470" y1="230" x2="560" y2="230" stroke="#F5F0E6" stroke-width="5"/>
+<polygon points="550,220 550,240 568,230" fill="#F5F0E6"/>
+<text x="515" y="210" font-family="Menlo, monospace" font-size="14" fill="#6B7B8E" text-anchor="middle">inspect</text>
+<!-- right: JSON envelope card -->
+<g transform="rotate(2 720 235)">
+<rect x="600" y="125" width="280" height="220" fill="#1A1F3A" stroke="#46C08A" stroke-width="5"/>
+<text x="630" y="172" font-family="Menlo, monospace" font-size="20" fill="#F5F0E6">{</text>
+<text x="630" y="202" font-family="Menlo, monospace" font-size="20" fill="#F5F0E6">  "status": <tspan fill="#46C08A">"ok"</tspan>,</text>
+<text x="630" y="232" font-family="Menlo, monospace" font-size="20" fill="#F5F0E6">  "schema": { … },</text>
+<text x="630" y="262" font-family="Menlo, monospace" font-size="20" fill="#F5F0E6">  "unsupported": []</text>
+<text x="630" y="292" font-family="Menlo, monospace" font-size="20" fill="#F5F0E6">}</text>
+<text x="860" y="330" font-family="Menlo, monospace" font-size="13" fill="#6B7B8E" text-anchor="end">envelope</text>
+</g>
+<text x="60" y="505" font-family="Hiragino Sans, sans-serif" font-size="40" fill="#F5F0E6" font-weight="bold">A5:SQL Mk-2のER図をCLIで読む</text>
+<text x="60" y="552" font-family="Hiragino Sans, sans-serif" font-size="22" fill="#6B7B8E">v0.1.2 と専用 Skill の紹介</text>
+<text x="1140" y="40" font-family="Menlo, monospace" font-size="16" fill="#6B7B8E" text-anchor="end">j1nn0 lab</text>
+</svg>
