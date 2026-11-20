@@ -1,53 +1,61 @@
 {
-  "version": 1,
+  "version": 2,
   "skills": {
     "blog-idea-grilling": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-idea-grilling/SKILL.md",
-      "computedHash": "ce7d0525e60035111b45db5b3ec133d555c5754117d5859b0a0bc61fc3fc0855"
+      "computedHash": "0ba60fe0bf2169b6d3e2c5abc94266f6148413fa97f87f73f51592933258fd01",
+      "commit": "16ca3bcfa644c1eebf091a2ca0ef3ebfba8722e4"
     },
     "blog-ops": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-ops/SKILL.md",
-      "computedHash": "574f84990367ebb708bb7d18cab52b79ce9cebd317a710743f5593d14e102f4d"
+      "computedHash": "e20dff623fc0feb244cfc1b23839c5a38f5521377c33bfa6e52743d88b343af4",
+      "commit": "16ca3bcfa644c1eebf091a2ca0ef3ebfba8722e4"
     },
     "blog-writing-guide-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/blog-writing-guide-ja/SKILL.md",
-      "computedHash": "860710ca6554108a61abcb35d87eee09acbd6b89eaa9af2964608330519c4298"
+      "computedHash": "519459fab5270deccc8b8e02d1caaef1ca8bcb1c3be68ac1e994a91dd5bfd97f",
+      "commit": "16ca3bcfa644c1eebf091a2ca0ef3ebfba8722e4"
     },
     "fact-check-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/fact-check-ja/SKILL.md",
-      "computedHash": "58ab53e6ae64ace9d2fac6734f89ab204ba924660770a2003c4f35afa7ff07ec"
+      "computedHash": "aa8039010c1be517c76489979fc3e5d9ea9362fccb220fc73623dc296aeffaa1",
+      "commit": "16ca3bcfa644c1eebf091a2ca0ef3ebfba8722e4"
     },
     "hallmark": {
       "source": "nutlope/hallmark",
       "sourceType": "github",
       "skillPath": "skills/hallmark/SKILL.md",
-      "computedHash": "579f86b27cdd7eb972107f7aecedd537f472891c5fd7c7c821bea15f64e0fe86"
+      "computedHash": "e5d4ee5cf0af2dcc81a23ef49b587fbfd71236ff9f9df9da12d3bf347e26e572",
+      "commit": "04977e15f3dfd6ee4b74c887dac3eb52665d6c92"
     },
     "natural-japanese": {
       "source": "coji/natural-japanese",
       "sourceType": "github",
       "skillPath": "skills/natural-japanese/SKILL.md",
-      "computedHash": "2cbc03e78e7533e2baa502b37b58db5dae91dcdb3fa991e02f57d3c6c6805964"
+      "computedHash": "40683c3c92259a33ba7e52cd5c65311de55103a4c9275ab832408704a6b6e81b",
+      "commit": "840bd400cbcb64c8b64d492a144da54fc05776c5"
     },
     "writing-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
       "skillPath": "skills/writing-ja/SKILL.md",
-      "computedHash": "d37051d212eab8e2b7438ccd220ebf7275ff1cbd5f604cf8e461c78c5a4766a8"
+      "computedHash": "8c44aceb4db26bacb2bde573da9387815cea9ba7c8f4b03339b36e5a95da7cf7",
+      "commit": "16ca3bcfa644c1eebf091a2ca0ef3ebfba8722e4"
     },
     "yomiyasu": {
       "source": "nanaism/yomiyasu",
       "sourceType": "github",
-      "skillPath": "SKILL.md",
-      "computedHash": "c13f52c0943b5fc780ab262414a112990bd591e571d99fab8c3caae3d1660465"
+      "skillPath": "skills/yomiyasu/SKILL.md",
+      "computedHash": "f4026a5ac2c8aaeeedee2ab9e1bb0d27abdad4dd3dd2381caf3cba83266365c4",
+      "commit": "c49d5f1bee91258e33e1febc3569c6c87be7669e"
     }
   }
 }
