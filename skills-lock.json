@@ -43,6 +43,13 @@
       "computedHash": "40683c3c92259a33ba7e52cd5c65311de55103a4c9275ab832408704a6b6e81b",
       "commit": "840bd400cbcb64c8b64d492a144da54fc05776c5"
     },
+    "tsuzuri": {
+      "source": "MaryCache/tsuzuri",
+      "commit": "61e346b5d491b6b25b9b4be28f9496fdfc14789a",
+      "sourceType": "github",
+      "skillPath": "skills/tsuzuri/SKILL.md",
+      "computedHash": "4b479d10ed796ededd2a331ca0d0c7512283b0274cc53a5ce5e906716eb60f6e"
+    },
     "writing-ja": {
       "source": "j1nn0/skills",
       "sourceType": "github",
@@ -54,8 +61,8 @@
       "source": "nanaism/yomiyasu",
       "sourceType": "github",
       "skillPath": "skills/yomiyasu/SKILL.md",
-      "computedHash": "f4026a5ac2c8aaeeedee2ab9e1bb0d27abdad4dd3dd2381caf3cba83266365c4",
-      "commit": "c49d5f1bee91258e33e1febc3569c6c87be7669e"
+      "computedHash": "e932db01ae30a709e6a5ce96941bb3774f2d2c130fd167140de0ee8a0ffb2e8e",
+      "commit": "ddf365b5d5b36a7aa4ffab798dce1b694dbb1afd"
     }
   }
 }
